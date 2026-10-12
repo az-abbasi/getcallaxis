@@ -9,7 +9,7 @@ const sharedFooterHTML = `
       <!-- Left Branding Column -->
       <div class="footer-col brand-col">
         <a href="index.html" class="footer-logo">
-          <img src="logo.png" alt="CallAxis Logo" class="footer-logo-img">
+          <img src="logo.png" alt="GetCallAxis Logo" class="footer-logo-img">
           <span class="logo-text">Call<em>Axis</em></span>
         </a>
         <p class="footer-tagline">Connecting homeowners with top insurance and service pros.</p>
@@ -20,7 +20,7 @@ const sharedFooterHTML = `
           </div>
           <div class="contact-line">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:arsalanmanunited@gmail.com">arsalanmanunited@gmail.com</a>
+            <a href="mailto:contact@getcallaxis.com">contact@getcallaxis.com</a>
           </div>
         </div>
       </div>
@@ -64,10 +64,10 @@ const sharedFooterHTML = `
     <!-- Bottom Bar -->
     <div class="footer-bottom">
       <div class="disclaimer-text">
-        <p>CallAxis is a free referral service that helps users connect with independent local service providers and insurance agents. CallAxis is not an insurance company or a licensed contractor and does not perform services directly. All quotes and work are provided independently by third-party professionals.</p>
+        <p>GetCallAxis is a free referral service that helps users connect with independent local service providers and insurance agents. GetCallAxis is not an insurance company or a licensed contractor and does not perform services directly. All quotes and work are provided independently by third-party professionals.</p>
       </div>
       <div class="footer-bottom-row">
-        <div class="copyright">&copy; 2026 CallAxis. All rights reserved.</div>
+        <div class="copyright">&copy; 2026 GetCallAxis. All rights reserved.</div>
         <div class="legal-links">
           <a href="about.html#privacy">Privacy Policy</a>
           <span class="sep">&bull;</span>
@@ -143,7 +143,7 @@ function renderPage(filename, data) {
       <span>•</span>
       <span>📞 CALL NOW FOR INSTANT QUOTES: <a href="tel:+15550100123" class="ticker-phone">+1 (555) 010-0123</a></span>
       <span>•</span>
-      <span>✉️ EMAIL: <a href="mailto:arsalanmanunited@gmail.com" class="ticker-email">arsalanmanunited@gmail.com</a></span>
+      <span>✉️ EMAIL: <a href="mailto:contact@getcallaxis.com" class="ticker-email">contact@getcallaxis.com</a></span>
       <span>•</span>
       <span>FREE SERVICE — NO OBLIGATION</span>
     </div>
@@ -153,7 +153,7 @@ function renderPage(filename, data) {
   <header class="site-header">
     <div class="header-container">
       <a href="index.html" class="logo">
-        <img src="logo.png" alt="CallAxis Logo" class="logo-img">
+        <img src="logo.png" alt="GetCallAxis Logo" class="logo-img">
         <span class="logo-text">Call<em>Axis</em></span>
       </a>
 

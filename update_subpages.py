@@ -11,7 +11,7 @@ subpages_data = [
         "tagline": "Repairs, full replacements & storm damage restoration handled by verified local pros.",
         "meta_desc": "Connect with top-rated, licensed roofing contractors in your area. Free quotes for shingle, metal, and flat roof repair and replacement.",
         "main_title": "How it works for roofing",
-        "para1": "When your roof suffers storm damage or reaches the end of its lifespan, finding dependable local roofers shouldn't be stressful. CallAxis connects you directly with state-certified, insured roofing contractors serving your exact zip code.",
+        "para1": "When your roof suffers storm damage or reaches the end of its lifespan, finding dependable local roofers shouldn't be stressful. GetCallAxis connects you directly with state-certified, insured roofing contractors serving your exact zip code.",
         "para2": "Compare transparent price estimates for asphalt shingles, metal panels, or flat roof systems with zero cost and no obligation to hire.",
         "benefits": [
             "Asphalt, metal & tile roof options",
@@ -35,7 +35,7 @@ subpages_data = [
         "tagline": "Custom shower conversions, vanity upgrades & full master bath remodels.",
         "meta_desc": "Transform your bathroom with verified local remodeling contractors. Free quotes for tub-to-shower conversions, tiling, and full renovations.",
         "main_title": "How it works for bathroom remodeling",
-        "para1": "Upgrading your bathroom increases your home's daily comfort and resale value. Whether you need a quick tub-to-shower conversion or a luxury master suite overhaul, CallAxis connects you with screened remodeling contractors near you.",
+        "para1": "Upgrading your bathroom increases your home's daily comfort and resale value. Whether you need a quick tub-to-shower conversion or a luxury master suite overhaul, GetCallAxis connects you with screened remodeling contractors near you.",
         "para2": "Review free design proposals and itemized quotes from licensed builders and master plumbers with zero pressure.",
         "benefits": [
             "Custom tub-to-shower conversions",
@@ -59,7 +59,7 @@ subpages_data = [
         "tagline": "Hardwood, luxury vinyl plank, laminate & ceramic tile installed right.",
         "meta_desc": "High-quality hardwood, laminate, vinyl, and tile flooring specialists. Get free local flooring quotes from licensed installers.",
         "main_title": "How it works for flooring installation",
-        "para1": "New floors immediately elevate the look and feel of every room in your home. CallAxis matches you with experienced local flooring specialists skilled in hardwood, luxury vinyl plank (LVP), laminate, and custom tile.",
+        "para1": "New floors immediately elevate the look and feel of every room in your home. GetCallAxis matches you with experienced local flooring specialists skilled in hardwood, luxury vinyl plank (LVP), laminate, and custom tile.",
         "para2": "Receive transparent estimates covering materials, subfloor preparation, and professional installation with no hidden fees.",
         "benefits": [
             "Hardwood, LVP, laminate & tile options",
@@ -83,7 +83,7 @@ subpages_data = [
         "tagline": "AC repair, furnace replacements & heat pumps by certified HVAC technicians.",
         "meta_desc": "Keep your home comfortable year-round with certified HVAC technicians. Get free quotes for AC repair, furnace installation, and heat pumps.",
         "main_title": "How it works for HVAC heating & cooling",
-        "para1": "A malfunctioning HVAC system impacts your home comfort and energy bills. CallAxis bridges you with EPA-certified HVAC contractors for fast air conditioning repair, furnace replacements, or heat pump upgrades.",
+        "para1": "A malfunctioning HVAC system impacts your home comfort and energy bills. GetCallAxis bridges you with EPA-certified HVAC contractors for fast air conditioning repair, furnace replacements, or heat pump upgrades.",
         "para2": "Get matched with top-rated technicians offering energy-efficient systems, seasonal maintenance, and 24/7 emergency service.",
         "benefits": [
             "AC & furnace repair or replacement",
@@ -107,7 +107,7 @@ subpages_data = [
         "tagline": "Energy Star replacement windows to lower energy bills and quiet noise.",
         "meta_desc": "Lower energy bills with energy-efficient double-pane replacement windows. Get free quotes from verified local window installers.",
         "main_title": "How it works for window replacement",
-        "para1": "Drafty, outdated windows waste heating and cooling energy while compromising home security. CallAxis matches you with local window installation pros specializing in high-performance vinyl, wood, and composite replacement windows.",
+        "para1": "Drafty, outdated windows waste heating and cooling energy while compromising home security. GetCallAxis matches you with local window installation pros specializing in high-performance vinyl, wood, and composite replacement windows.",
         "para2": "Compare energy-saving double and triple pane glass options designed to reduce utility bills and enhance your home exterior.",
         "benefits": [
             "Energy Star double & triple pane glass",
@@ -131,7 +131,7 @@ subpages_data = [
         "tagline": "Custom seamless aluminum gutters & leaf guards to protect foundation.",
         "meta_desc": "Protect your home's foundation with seamless gutters and leaf guards. Get free quotes from local gutter specialists.",
         "main_title": "How it works for gutter installation",
-        "para1": "Clogged or leaking gutters cause water damage to your roofline, siding, and foundation. CallAxis connects you with local gutter contractors offering seamless aluminum gutters and micro-mesh gutter guard systems.",
+        "para1": "Clogged or leaking gutters cause water damage to your roofline, siding, and foundation. GetCallAxis connects you with local gutter contractors offering seamless aluminum gutters and micro-mesh gutter guard systems.",
         "para2": "Receive fast quotes for complete gutter replacements, repairs, and downspout extensions with zero obligation.",
         "benefits": [
             "Custom seamless aluminum & copper gutters",
@@ -155,7 +155,7 @@ subpages_data = [
         "tagline": "Vinyl, James Hardie fiber cement & wood siding to boost curb appeal.",
         "meta_desc": "Upgrade your curb appeal with durable vinyl, fiber cement, or wood siding. Get free quotes from licensed siding contractors.",
         "main_title": "How it works for siding replacement",
-        "para1": "Quality siding protects your home structural shell while providing insulation and weather defense. CallAxis matches you with top-rated siding installers experienced in vinyl, fiber cement, engineered wood, and stone veneer.",
+        "para1": "Quality siding protects your home structural shell while providing insulation and weather defense. GetCallAxis matches you with top-rated siding installers experienced in vinyl, fiber cement, engineered wood, and stone veneer.",
         "para2": "Compare itemized project quotes including removal, weather wrap barrier, soffit, trim, and exterior panel installation.",
         "benefits": [
             "Vinyl, James Hardie fiber cement & wood",
@@ -179,7 +179,7 @@ subpages_data = [
         "tagline": "Custom cabinets, quartz countertops, islands & full kitchen overhauls.",
         "meta_desc": "Design your dream kitchen with experienced local kitchen contractors. Get free quotes for custom cabinets, countertops, and full remodels.",
         "main_title": "How it works for kitchen remodeling",
-        "para1": "The kitchen is the heart of your home. Whether planning a full layout overhaul or updating cabinets, quartz countertops, and backsplashes, CallAxis connects you with verified kitchen remodeling general contractors.",
+        "para1": "The kitchen is the heart of your home. Whether planning a full layout overhaul or updating cabinets, quartz countertops, and backsplashes, GetCallAxis connects you with verified kitchen remodeling general contractors.",
         "para2": "Get connected with design-build teams who handle architectural planning, cabinet fabrication, electrical, and plumbing integration.",
         "benefits": [
             "Custom cabinetry & island designs",
@@ -203,7 +203,7 @@ subpages_data = [
         "tagline": "Leak detection, water heaters, drain cleaning & re-piping specialists.",
         "meta_desc": "Fast, reliable local plumbers for leak repair, drain cleaning, water heaters, and re-piping. Get free plumbing estimates.",
         "main_title": "How it works for plumbing services",
-        "para1": "From unexpected pipe leaks to water heater installations and main sewer line clearouts, plumbing emergencies require certified experts. CallAxis bridges homeowners with background-checked master plumbers.",
+        "para1": "From unexpected pipe leaks to water heater installations and main sewer line clearouts, plumbing emergencies require certified experts. GetCallAxis bridges homeowners with background-checked master plumbers.",
         "para2": "Review upfront price estimates for tankless water heaters, fixture installs, or whole-house re-piping with zero pressure.",
         "benefits": [
             "Drain cleaning & sewer line inspection",
@@ -227,7 +227,7 @@ subpages_data = [
         "tagline": "200A panel upgrades, EV chargers, generators & rewiring by master electricians.",
         "meta_desc": "Safe, certified electrical panel upgrades, EV chargers, wiring, and lighting. Get free quotes from licensed electricians.",
         "main_title": "How it works for electrical contracting",
-        "para1": "Modern homes demand reliable electrical infrastructure for appliances, EV charging, and smart electronics. CallAxis matches you with state-licensed electricians for panel upgrades, generator wiring, and recessed lighting.",
+        "para1": "Modern homes demand reliable electrical infrastructure for appliances, EV charging, and smart electronics. GetCallAxis matches you with state-licensed electricians for panel upgrades, generator wiring, and recessed lighting.",
         "para2": "Ensure code compliance and electrical safety with free project consultations from local electrical contractors.",
         "benefits": [
             "200A electrical panel & breaker upgrades",
@@ -251,7 +251,7 @@ subpages_data = [
         "tagline": "Clean renewable energy, battery storage & lower monthly power bills.",
         "meta_desc": "Reduce monthly power bills with clean, renewable rooftop solar panels. Get free solar quotes, battery storage, and tax incentive guidance.",
         "main_title": "How it works for solar panel installation",
-        "para1": "Switching to rooftop solar panels allows you to generate clean electricity, reduce monthly utility bills, and gain battery backup protection. CallAxis connects you with top Tier-1 solar panel installers.",
+        "para1": "Switching to rooftop solar panels allows you to generate clean electricity, reduce monthly utility bills, and gain battery backup protection. GetCallAxis connects you with top Tier-1 solar panel installers.",
         "para2": "Receive custom solar design quotes including federal tax credit savings, battery options, and net metering estimates.",
         "benefits": [
             "High-efficiency Tier 1 solar panels",
@@ -275,7 +275,7 @@ subpages_data = [
         "tagline": "Torsion spring repairs, Wi-Fi opener upgrades & stylish replacement doors.",
         "meta_desc": "Professional garage door repair, spring replacement, and new door installs. Get free local estimates from garage door specialists.",
         "main_title": "How it works for garage door services",
-        "para1": "A broken garage door spring or faulty opener traps vehicles and breaches home security. CallAxis matches you with local garage door technicians specializing in same-day spring replacement, opener installs, and new insulated doors.",
+        "para1": "A broken garage door spring or faulty opener traps vehicles and breaches home security. GetCallAxis matches you with local garage door technicians specializing in same-day spring replacement, opener installs, and new insulated doors.",
         "para2": "Explore carriage house, modern steel, or glass door options with fast, hassle-free quotes.",
         "benefits": [
             "Insulated steel, wood & carriage door styles",
@@ -299,7 +299,7 @@ subpages_data = [
         "tagline": "Piering, crack repairs, crawlspace encapsulation & sump pump systems.",
         "meta_desc": "Stabilize foundation cracks and waterproof basements or crawl spaces. Get free inspection quotes from structural specialists.",
         "main_title": "How it works for foundations & waterproofing",
-        "para1": "Foundation settling, wall cracks, and wet basements risk severe structural damage if unaddressed. CallAxis connects homeowners with licensed foundation repair engineers and basement waterproofing specialists.",
+        "para1": "Foundation settling, wall cracks, and wet basements risk severe structural damage if unaddressed. GetCallAxis connects homeowners with licensed foundation repair engineers and basement waterproofing specialists.",
         "para2": "Schedule free structural inspections and receive customized solutions for piering, wall anchoring, crawlspace encapsulation, and sump pumps.",
         "benefits": [
             "Foundation piering & wall crack repair",
@@ -325,7 +325,7 @@ subpages_data = [
         "tagline": "Compare competitive policy rates from top licensed auto carriers.",
         "meta_desc": "Compare affordable auto insurance policies from top national carriers. Find collision, comprehensive, and liability coverage at lower monthly rates.",
         "main_title": "How it works for auto insurance",
-        "para1": "Finding affordable car insurance with complete collision, comprehensive, and liability protection shouldn't require endless phone calls. CallAxis connects drivers directly with licensed state insurance agents.",
+        "para1": "Finding affordable car insurance with complete collision, comprehensive, and liability protection shouldn't require endless phone calls. GetCallAxis connects drivers directly with licensed state insurance agents.",
         "para2": "Compare rates from top carrier brands, discover safe-driver discounts, and lock in savings with zero obligation.",
         "benefits": [
             "Collision, comprehensive & liability plans",
@@ -349,7 +349,7 @@ subpages_data = [
         "tagline": "Individual, family & self-employed health insurance tailored to your budget.",
         "meta_desc": "Find comprehensive individual, family, or small business health coverage. Compare ACA marketplace and private insurance plans.",
         "main_title": "How it works for health insurance",
-        "para1": "Navigating healthcare plans, deductibles, and doctor networks can be overwhelming. CallAxis matches policy seekers with certified health insurance advisors who simplify finding coverage.",
+        "para1": "Navigating healthcare plans, deductibles, and doctor networks can be overwhelming. GetCallAxis matches policy seekers with certified health insurance advisors who simplify finding coverage.",
         "para2": "Explore ACA marketplace options, low-deductible private plans, and dental/vision add-ons tailored to your budget.",
         "benefits": [
             "ACA marketplace & private insurance options",
@@ -373,7 +373,7 @@ subpages_data = [
         "tagline": "Protect your home, roof & personal property from storm, fire & liability.",
         "meta_desc": "Protect your home and personal property against fire, storm, and theft. Get free homeowners insurance quotes from top carriers.",
         "main_title": "How it works for homeowners insurance",
-        "para1": "Your home is one of your most significant lifetime investments. CallAxis connects homeowners with licensed insurance agents to find comprehensive home, condo, or renters coverage.",
+        "para1": "Your home is one of your most significant lifetime investments. GetCallAxis connects homeowners with licensed insurance agents to find comprehensive home, condo, or renters coverage.",
         "para2": "Compare dwelling protection limits, roof endorsements, and auto-home bundling discounts to lower your annual premiums.",
         "benefits": [
             "Dwelling, roof & personal property coverage",
@@ -397,7 +397,7 @@ subpages_data = [
         "tagline": "Term & whole life insurance policies to protect your family's future.",
         "meta_desc": "Secure financial peace of mind for your loved ones with term or whole life insurance. Get free quotes starting under $1/day.",
         "main_title": "How it works for life insurance",
-        "para1": "Securing your family's financial future provides ultimate peace of mind. CallAxis matches you with experienced life insurance specialists offering 10 to 30-year term and permanent whole life policies.",
+        "para1": "Securing your family's financial future provides ultimate peace of mind. GetCallAxis matches you with experienced life insurance specialists offering 10 to 30-year term and permanent whole life policies.",
         "para2": "Review affordable coverage options, including no-medical-exam policies, with free quotes customized to your age and goals.",
         "benefits": [
             "10, 20 & 30 year term life options",
@@ -441,7 +441,7 @@ def generate_page(data):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{service_full} | CallAxis Referral Network</title>
+  <title>{service_full} | GetCallAxis Referral Network</title>
   <meta name="description" content="{meta_desc}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -456,7 +456,7 @@ def generate_page(data):
       <div class="ticker-group">
         <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
         <span class="ticker-sep">•</span>
-        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-item">✉️ Email: <strong>contact@getcallaxis.com</strong></span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
         <span class="ticker-sep">•</span>
@@ -468,7 +468,7 @@ def generate_page(data):
       <div class="ticker-group" aria-hidden="true">
         <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
         <span class="ticker-sep">•</span>
-        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-item">✉️ Email: <strong>contact@getcallaxis.com</strong></span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
         <span class="ticker-sep">•</span>
@@ -483,8 +483,8 @@ def generate_page(data):
   <!-- Sticky Navbar -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="brand-logo" aria-label="CallAxis Homepage">
-        <img src="logo.jpg" alt="CallAxis Logo" class="brand-logo-img">
+      <a href="index.html" class="brand-logo" aria-label="GetCallAxis Homepage">
+        <img src="logo.jpg" alt="GetCallAxis Logo" class="brand-logo-img">
         <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
       </a>
 
@@ -551,7 +551,7 @@ def generate_page(data):
           <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
 
-        <a href="tel:+15550100123" class="phone-link" aria-label="Call CallAxis Directly">
+        <a href="tel:+15550100123" class="phone-link" aria-label="Call GetCallAxis Directly">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span class="phone-number">+1 (555) 010-0123</span>
         </a>
@@ -819,7 +819,7 @@ def generate_page(data):
       <div class="footer-grid">
         <div class="footer-col brand-col">
           <a href="index.html" class="brand-logo footer-logo">
-            <img src="logo.jpg" alt="CallAxis Logo" class="footer-logo-img">
+            <img src="logo.jpg" alt="GetCallAxis Logo" class="footer-logo-img">
             <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
           </a>
           <p class="footer-tagline">
@@ -834,7 +834,7 @@ def generate_page(data):
             </p>
             <p>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-right:4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email: 
-              <strong>arsalanmanunited@gmail.com</strong>
+              <strong>contact@getcallaxis.com</strong>
             </p>
             <p>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Address: 
@@ -880,10 +880,10 @@ def generate_page(data):
 
       <div class="footer-bottom">
         <p class="disclaimer-text">
-          CallAxis is a free online referral platform connecting consumers with independent third-party insurance agents and home contractors. CallAxis is not an underwriter, insurance agency, or licensed general contractor. Services may vary by state and zip code.
+          GetCallAxis is a free online referral platform connecting consumers with independent third-party insurance agents and home contractors. GetCallAxis is not an underwriter, insurance agency, or licensed general contractor. Services may vary by state and zip code.
         </p>
         <div class="copyright-bar">
-          <span>&copy; <span id="current-year">2026</span> CallAxis Referral Network. All rights reserved.</span>
+          <span>&copy; <span id="current-year">2026</span> GetCallAxis Referral Network. All rights reserved.</span>
           <div class="legal-mini-links">
             <button type="button" class="btn-text-link modal-trigger-privacy">Privacy Policy</button> •
             <button type="button" class="btn-text-link modal-trigger-terms">Terms of Service</button>

@@ -42,12 +42,12 @@ pages.forEach(file => {
     errors.push(`File too small or incomplete: ${file} (${content.length} bytes)`);
   }
 
-  // Check CallAxis branding & contact requirements
+  // Check GetCallAxis branding & contact requirements
   if (!content.includes('+1 (555) 010-0123')) {
     errors.push(`${file}: Missing '+1 (555) 010-0123'`);
   }
-  if (!content.includes('arsalanmanunited@gmail.com')) {
-    errors.push(`${file}: Missing email 'arsalanmanunited@gmail.com'`);
+  if (!content.includes('contact@getcallaxis.com')) {
+    errors.push(`${file}: Missing email 'contact@getcallaxis.com'`);
   }
 
   // Check template elements

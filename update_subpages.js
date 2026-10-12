@@ -468,7 +468,7 @@ function generatePage(data) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${service_full} | CallAxis Referral Network</title>
+  <title>${service_full} | GetCallAxis Referral Network</title>
   <meta name="description" content="${meta_desc}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -483,7 +483,7 @@ function generatePage(data) {
       <div class="ticker-group">
         <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
         <span class="ticker-sep">•</span>
-        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-item">✉️ Email: <strong>contact@getcallaxis.com</strong></span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
         <span class="ticker-sep">•</span>
@@ -495,7 +495,7 @@ function generatePage(data) {
       <div class="ticker-group" aria-hidden="true">
         <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
         <span class="ticker-sep">•</span>
-        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-item">✉️ Email: <strong>contact@getcallaxis.com</strong></span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
         <span class="ticker-sep">•</span>
@@ -510,8 +510,8 @@ function generatePage(data) {
   <!-- Sticky Navbar -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="brand-logo" aria-label="CallAxis Homepage">
-        <img src="logo.jpg" alt="CallAxis Logo" class="brand-logo-img">
+      <a href="index.html" class="brand-logo" aria-label="GetCallAxis Homepage">
+        <img src="logo.jpg" alt="GetCallAxis Logo" class="brand-logo-img">
         <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
       </a>
 
@@ -579,7 +579,7 @@ function generatePage(data) {
           <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
 
-        <a href="tel:+15550100123" class="phone-link" aria-label="Call CallAxis Directly">
+        <a href="tel:+15550100123" class="phone-link" aria-label="Call GetCallAxis Directly">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span class="phone-number">+1 (555) 010-0123</span>
         </a>
@@ -857,7 +857,7 @@ ${related.map(item => `        <a href="${item.url}" class="related-service-card
       <div class="footer-grid">
         <div class="footer-col brand-col">
           <a href="index.html" class="brand-logo footer-logo">
-            <img src="logo.jpg" alt="CallAxis Logo" class="footer-logo-img">
+            <img src="logo.jpg" alt="GetCallAxis Logo" class="footer-logo-img">
             <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
           </a>
           <p class="footer-tagline">
@@ -872,7 +872,7 @@ ${related.map(item => `        <a href="${item.url}" class="related-service-card
             </p>
             <p>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-right:4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email: 
-              <strong>arsalanmanunited@gmail.com</strong>
+              <strong>contact@getcallaxis.com</strong>
             </p>
             <p>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Address: 
@@ -918,10 +918,10 @@ ${related.map(item => `        <a href="${item.url}" class="related-service-card
 
       <div class="footer-bottom">
         <p class="disclaimer-text">
-          CallAxis is a free online referral platform connecting consumers with independent third-party insurance agents and home contractors. CallAxis is not an underwriter, insurance agency, or licensed general contractor. Services may vary by state and zip code.
+          GetCallAxis is a free online referral platform connecting consumers with independent third-party insurance agents and home contractors. GetCallAxis is not an underwriter, insurance agency, or licensed general contractor. Services may vary by state and zip code.
         </p>
         <div class="copyright-bar">
-          <span>&copy; <span id="current-year">2026</span> CallAxis Referral Network. All rights reserved.</span>
+          <span>&copy; <span id="current-year">2026</span> GetCallAxis Referral Network. All rights reserved.</span>
           <div class="legal-mini-links">
             <button type="button" class="btn-text-link modal-trigger-privacy">Privacy Policy</button> •
             <button type="button" class="btn-text-link modal-trigger-terms">Terms of Service</button>

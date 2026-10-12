@@ -3,6 +3,31 @@ const path = require('path');
 
 // Master Data Object for all 17 Subpages and 2 Overview Pages
 const subpagesData = [
+  {
+    filename: "painting.html",
+    service: "Painting",
+    service_full: "Interior & Exterior Painting",
+    category: "Home Services",
+    cat_slug: "home-services",
+    tagline: "Interior walls, exterior trim, cabinetry & staining by verified local painters.",
+    meta_desc: "Refresh your home with professional interior and exterior painting services. Get free quotes from verified local painters.",
+    main_title: "How it works for painting services",
+    para1: "Connect with licensed and insured local painting contractors specializing in interior walls, exterior siding, cabinet refinishing, and deck staining.",
+    para2: "Get free on-site consultations and detailed estimates from background-checked professionals with zero obligation.",
+    benefits: [
+      "Interior wall, ceiling & trim painting",
+      "Exterior siding, trim & deck staining",
+      "Cabinet painting & refinishing",
+      "Licensed, bonded & insured painters"
+    ],
+    related_heading: "Other home services you might need",
+    related: [
+      { title: "Flooring", url: "flooring.html" },
+      { title: "Bathroom Remodel", url: "bathroom-remodel.html" },
+      { title: "Kitchen Remodel", url: "kitchen-remodel.html" },
+      { title: "Siding", url: "siding.html" }
+    ]
+  },
   // --- 13 HOME SERVICES SUBPAGES ---
   {
     filename: "roofing.html",
@@ -436,7 +461,7 @@ const subpagesData = [
     tagline: "Get help comparing Medicare options from licensed agents.",
     meta_desc: "Get help comparing Medicare Advantage, Medigap supplements, and Part D prescription options from independent licensed agents.",
     main_title: "How it works for Medicare",
-    para1: "Navigating Medicare options can feel overwhelming with numerous plans, rules, and enrollment deadlines. CallAxis connects you with independent, licensed insurance agents who can help clarify your options and guide you through the process.",
+    para1: "Navigating Medicare options can feel overwhelming with numerous plans, rules, and enrollment deadlines. GetCallAxis connects you with independent, licensed insurance agents who can help clarify your options and guide you through the process.",
     para2: "Whether you are approaching age 65 or looking to evaluate your current healthcare coverage during an open enrollment period, compare available options with professional guidance at no cost to you.",
     benefits: [
       "Medicare Advantage plan comparisons",
@@ -454,43 +479,47 @@ const subpagesData = [
   }
 ];
 
+const BRAND_NAME = "GetCallAxis";
+const EMAIL = "contact@getcallaxis.com";
+
 // DUMMY NUMBER, REPLACE WITH CLIENT'S REAL NUMBER
-const PHONE_DISPLAY = "+1 (555) 010-0123";
-const PHONE_TEL = "+15550100123";
+const PHONE_DISPLAY = "+1 (215) 472-1722";
+const PHONE_TEL = "+12154721722";
 
 // DUMMY ADDRESS, REPLACE WITH CLIENT'S REAL ADDRESS
-const ADDRESS_DISPLAY = "1234 Business Park Drive, Suite 100, Dover, DE 19901";
+const ADDRESS_DISPLAY = "487 Maple Ridge Avenue, Westfield, NJ 07000, United States";
 
 const SITE_CONFIG = {
+  brandName: BRAND_NAME,
+  email: EMAIL,
   address: ADDRESS_DISPLAY,
   phone: PHONE_DISPLAY,
   phoneDisplay: PHONE_DISPLAY,
-  phoneTel: PHONE_TEL,
-  email: "arsalanmanunited@gmail.com"
+  phoneTel: PHONE_TEL
 };
 
 const sharedFooterHTML = `  <!-- Shared Site Footer -->
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="brand-logo" style="margin-bottom:16px; display:inline-flex; align-items:center; gap:8px; text-decoration:none;">
-          <img src="logo.jpg" alt="CallAxis Logo" style="width:32px;height:32px;border-radius:6px;object-fit:cover;">
-          <span class="logo-text"><span class="footer-brand-call">Call</span><span class="footer-brand-axis">Axis</span></span>
+        <a href="index.html" class="brand-logo" aria-label="${BRAND_NAME} Homepage" style="margin-bottom:16px; display:inline-flex; align-items:center; gap:10px; text-decoration:none;">
+          <img src="logo-icon-512.png" alt="${BRAND_NAME}" class="brand-logo-img">
+          <span class="logo-text"><span class="logo-name-prefix">GetCall</span><span class="logo-name-accent">Axis</span></span>
         </a>
         <p class="footer-desc">Connecting US consumers with trusted insurance agents and home service contractors — free, fast, and no obligation.</p>
         
         <div class="footer-contact">
           <div class="footer-contact-row">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <a href="tel:+15550100123" class="footer-link" style="color:inherit;text-decoration:none;">+1 (555) 010-0123</a>
+            <a href="tel:${PHONE_TEL}" class="footer-link" style="color:inherit;text-decoration:none;">${PHONE_DISPLAY}</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:${EMAIL}" class="footer-link" style="color:inherit;text-decoration:none;">${EMAIL}</a>
           </div>
           <div class="footer-contact-row">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             <span>${SITE_CONFIG.address}</span>
-          </div>
-          <div class="footer-contact-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            <a href="mailto:arsalanmanunited@gmail.com" class="footer-link" style="color:inherit;text-decoration:none;">arsalanmanunited@gmail.com</a>
           </div>
         </div>
       </div>
@@ -529,7 +558,7 @@ const sharedFooterHTML = `  <!-- Shared Site Footer -->
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 CallAxis. All rights reserved.</span>
+      <span>© 2026 ${BRAND_NAME}. All rights reserved.</span>
       <span><a href="privacy-policy.html" class="footer-link">Privacy Policy</a> · <a href="terms.html" class="footer-link">Terms of Service</a></span>
     </div>
   </footer>`;
@@ -540,8 +569,8 @@ function generateHeroHTML({ category, cat_slug, service, tagline, isOverview = f
   const isMedicare = service.toLowerCase() === 'medicare';
 
   let disclaimerP1 = isInsurance
-    ? `<strong>Disclaimer:</strong> CallAxis is a free referral service. We are not an insurance carrier, agency or broker, and we do not issue policies or give coverage advice. The agents we connect you with are independent and licensed in their own right.`
-    : `<strong>Disclaimer:</strong> CallAxis is a free service that helps homeowners get in touch with local home service providers. The contractors we connect you with are independent businesses. CallAxis does not perform the work and does not guarantee its quality. Before hiring, please check that the provider holds the licenses and insurance required for the job in your state.`;
+    ? `<strong>Disclaimer:</strong> ${BRAND_NAME} is a free referral service. We are not an insurance carrier, agency or broker, and we do not issue policies or give coverage advice. The agents we connect you with are independent and licensed in their own right.`
+    : `<strong>Disclaimer:</strong> ${BRAND_NAME} is a free service that helps homeowners get in touch with local home service providers. The contractors we connect you with are independent businesses. ${BRAND_NAME} does not perform the work and does not guarantee its quality. Before hiring, please check that the provider holds the licenses and insurance required for the job in your state.`;
 
   let disclaimerP2 = isInsurance
     ? `Quotes, coverage options and availability vary by state and by applicant, and a quote request does not guarantee coverage.`
@@ -550,7 +579,7 @@ function generateHeroHTML({ category, cat_slug, service, tagline, isOverview = f
   let medicareComment = '';
   if (isMedicare) {
     medicareComment = '<!-- CLIENT TO CONFIRM required Medicare marketing disclaimers with compliance -->\n          ';
-    disclaimerP1 = `<strong>Disclaimer:</strong> CallAxis is a free referral service, not an insurance carrier, agency or broker. CallAxis is not connected with, affiliated with, or endorsed by the U.S. government or the federal Medicare program.`;
+    disclaimerP1 = `<strong>Disclaimer:</strong> ${BRAND_NAME} is a free referral service, not an insurance carrier, agency or broker. ${BRAND_NAME} is not connected with, affiliated with, or endorsed by the U.S. government or the federal Medicare program.`;
     disclaimerP2 = `The agents we connect you with are independent and licensed in their respective jurisdictions. Plans, benefits, and availability vary by location, carrier, and eligibility.`;
   }
 
@@ -581,7 +610,7 @@ function generateHeroHTML({ category, cat_slug, service, tagline, isOverview = f
         <p class="hero-desc" data-animate="fade-up">${tagline}</p>
 
         <div class="hero-buttons" data-animate="fade-up">
-          <a href="tel:+15550100123" class="btn btn-accent btn-lg">Call Now: +1 (555) 010-0123</a>
+          <a href="tel:${PHONE_TEL}" class="btn btn-accent btn-lg">Call Now: ${PHONE_DISPLAY}</a>
           <a href="#quoteForm" class="btn btn-ghost btn-lg" id="hero-quote-btn">Get my free quote &rarr;</a>
         </div>${disclaimerHTML}
       </div>
@@ -609,16 +638,27 @@ function generateSubpageHTML(data) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${service_full} | CallAxis Referral Network</title>
+  <title>${service_full} | ${BRAND_NAME}</title>
   <meta name="description" content="${meta_desc}">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0F766E">
+  <meta property="og:title" content="${service_full} | ${BRAND_NAME}">
+  <meta property="og:description" content="${meta_desc}">
+  <meta property="og:site_name" content="${BRAND_NAME}">
+  <meta property="og:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-    <!-- Apply saved theme before first paint to prevent flash -->
+  <!-- Apply saved theme before first paint to prevent flash -->
   <script>
     (function() {
       try {
-        var savedTheme = localStorage.getItem('callaxis_theme');
+        var savedTheme = localStorage.getItem('getcallaxis_theme');
         if (savedTheme === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
         } else if (savedTheme === 'light') {
@@ -635,9 +675,11 @@ function generateSubpageHTML(data) {
   <div class="top-ticker-bar" role="region" aria-label="Announcement ticker">
     <div class="ticker-track">
       <div class="ticker-group">
-        <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
+        <span class="ticker-item">📞 Call Us Direct: <a href="tel:${PHONE_TEL}" style="color:inherit;text-decoration:none;"><strong>${PHONE_DISPLAY}</strong></a></span>
         <span class="ticker-sep">•</span>
-        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-item">✉️ Email: <a href="mailto:${EMAIL}" style="color:inherit;text-decoration:none;"><strong>${EMAIL}</strong></a></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">📍 <strong>${ADDRESS_DISPLAY}</strong></span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
         <span class="ticker-sep">•</span>
@@ -647,9 +689,11 @@ function generateSubpageHTML(data) {
         <span class="ticker-sep">•</span>
       </div>
       <div class="ticker-group" aria-hidden="true">
-        <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
+        <span class="ticker-item">📞 Call Us Direct: <a href="tel:${PHONE_TEL}" style="color:inherit;text-decoration:none;"><strong>${PHONE_DISPLAY}</strong></a></span>
         <span class="ticker-sep">•</span>
-        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-item">✉️ Email: <a href="mailto:${EMAIL}" style="color:inherit;text-decoration:none;"><strong>${EMAIL}</strong></a></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">📍 <strong>${ADDRESS_DISPLAY}</strong></span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
         <span class="ticker-sep">•</span>
@@ -664,9 +708,9 @@ function generateSubpageHTML(data) {
   <!-- Sticky Navbar -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="brand-logo" aria-label="CallAxis Homepage">
-        <img src="logo.jpg" alt="CallAxis Logo" class="brand-logo-img">
-        <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
+      <a href="index.html" class="brand-logo" aria-label="${BRAND_NAME} Homepage">
+        <img src="logo-icon-512.png" alt="${BRAND_NAME}" class="brand-logo-img">
+        <span class="logo-text"><span class="logo-name-prefix">GetCall</span><span class="logo-name-accent">Axis</span></span>
       </a>
 
       <div class="nav-links-wrap">
@@ -727,9 +771,9 @@ function generateSubpageHTML(data) {
           <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
 
-        <a href="tel:+15550100123" class="phone-link" aria-label="Call CallAxis Directly">
+        <a href="tel:${PHONE_TEL}" class="phone-link" aria-label="Call ${BRAND_NAME} Directly">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span class="phone-number">+1 (555) 010-0123</span>
+          <span class="phone-number">${PHONE_DISPLAY}</span>
         </a>
 
         <a href="#quoteForm" class="btn btn-teal nav-quote-btn">Get a Free Quote</a>
@@ -850,7 +894,7 @@ function generateSubpageHTML(data) {
             </div>
             <h3>You're all set, <span id="successName">there</span>!</h3>
             <p>A verified local provider will call <span id="successPhone">you</span> shortly. Keep your phone nearby.</p>
-            <a href="tel:+15550100123" class="btn btn-ghost btn-block">Or call us now: +1 (555) 010-0123</a>
+            <a href="tel:${PHONE_TEL}" class="btn btn-ghost btn-block">Or call us now: ${PHONE_DISPLAY}</a>
           </div>
         </form>
       </div>
@@ -886,16 +930,27 @@ function generateHomeServicesOverviewHTML() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Services Referral Network | CallAxis</title>
+  <title>Home Services | ${BRAND_NAME}</title>
   <meta name="description" content="Find trusted local contractors for any home improvement or repair project — verified, licensed, and free to connect with.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0F766E">
+  <meta property="og:title" content="Home Services | ${BRAND_NAME}">
+  <meta property="og:description" content="Find trusted local contractors for any home improvement or repair project — verified, licensed, and free to connect with.">
+  <meta property="og:site_name" content="${BRAND_NAME}">
+  <meta property="og:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Apply saved theme before first paint to prevent flash -->
+  <!-- Apply saved theme before first paint to prevent flash -->
   <script>
     (function() {
       try {
-        var savedTheme = localStorage.getItem('callaxis_theme');
+        var savedTheme = localStorage.getItem('getcallaxis_theme');
         if (savedTheme === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
         } else if (savedTheme === 'light') {
@@ -912,9 +967,11 @@ function generateHomeServicesOverviewHTML() {
   <div class="top-ticker-bar" role="region" aria-label="Announcement ticker">
     <div class="ticker-track">
       <div class="ticker-group">
-        <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
+        <span class="ticker-item">📞 Call Us Direct: <a href="tel:${PHONE_TEL}" style="color:inherit;text-decoration:none;"><strong>${PHONE_DISPLAY}</strong></a></span>
         <span class="ticker-sep">•</span>
-        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-item">✉️ Email: <a href="mailto:${EMAIL}" style="color:inherit;text-decoration:none;"><strong>${EMAIL}</strong></a></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">📍 <strong>${ADDRESS_DISPLAY}</strong></span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
         <span class="ticker-sep">•</span>
@@ -929,9 +986,9 @@ function generateHomeServicesOverviewHTML() {
   <!-- Sticky Navbar -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="brand-logo" aria-label="CallAxis Homepage">
-        <img src="logo.jpg" alt="CallAxis Logo" class="brand-logo-img">
-        <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
+      <a href="index.html" class="brand-logo" aria-label="${BRAND_NAME} Homepage">
+        <img src="logo-icon-512.png" alt="${BRAND_NAME}" class="brand-logo-img">
+        <span class="logo-text"><span class="logo-name-prefix">GetCall</span><span class="logo-name-accent">Axis</span></span>
       </a>
 
       <div class="nav-links-wrap">
@@ -992,9 +1049,9 @@ function generateHomeServicesOverviewHTML() {
           <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
 
-        <a href="tel:+15550100123" class="phone-link" aria-label="Call CallAxis Directly">
+        <a href="tel:${PHONE_TEL}" class="phone-link" aria-label="Call ${BRAND_NAME} Directly">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span class="phone-number">+1 (555) 010-0123</span>
+          <span class="phone-number">${PHONE_DISPLAY}</span>
         </a>
 
         <a href="#quoteForm" class="btn btn-teal nav-quote-btn">Get a Free Quote</a>
@@ -1095,7 +1152,7 @@ function generateHomeServicesOverviewHTML() {
           <div class="success-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <h3>You're all set!</h3>
           <p>A verified local contractor will call you shortly.</p>
-          <a href="tel:+15550100123" class="btn btn-ghost btn-block">Or call us now: +1 (555) 010-0123</a>
+          <a href="tel:${PHONE_TEL}" class="btn btn-ghost btn-block">Or call us now: ${PHONE_DISPLAY}</a>
         </div>
       </form>
     </div>
@@ -1226,16 +1283,27 @@ function generateInsuranceOverviewHTML() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Referral Network | CallAxis</title>
+  <title>Insurance | ${BRAND_NAME}</title>
   <meta name="description" content="Compare quotes for Auto, Health, Home, and Life insurance from top-rated licensed carriers nationwide.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0F766E">
+  <meta property="og:title" content="Insurance | ${BRAND_NAME}">
+  <meta property="og:description" content="Compare quotes for Auto, Health, Home, and Life insurance from top-rated licensed carriers nationwide.">
+  <meta property="og:site_name" content="${BRAND_NAME}">
+  <meta property="og:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Apply saved theme before first paint to prevent flash -->
+  <!-- Apply saved theme before first paint to prevent flash -->
   <script>
     (function() {
       try {
-        var savedTheme = localStorage.getItem('callaxis_theme');
+        var savedTheme = localStorage.getItem('getcallaxis_theme');
         if (savedTheme === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
         } else if (savedTheme === 'light') {
@@ -1252,13 +1320,17 @@ function generateInsuranceOverviewHTML() {
   <div class="top-ticker-bar" role="region" aria-label="Announcement ticker">
     <div class="ticker-track">
       <div class="ticker-group">
-        <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
+        <span class="ticker-item">📞 Call Us Direct: <a href="tel:${PHONE_TEL}" style="color:inherit;text-decoration:none;"><strong>${PHONE_DISPLAY}</strong></a></span>
         <span class="ticker-sep">•</span>
-        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-item">✉️ Email: <a href="mailto:${EMAIL}" style="color:inherit;text-decoration:none;"><strong>${EMAIL}</strong></a></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">📍 <strong>${ADDRESS_DISPLAY}</strong></span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
         <span class="ticker-sep">•</span>
         <span class="ticker-item">🇺🇸 Serving All 50 U.S. States</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🛡️ Licensed & Verified Providers Only</span>
         <span class="ticker-sep">•</span>
       </div>
     </div>
@@ -1267,9 +1339,9 @@ function generateInsuranceOverviewHTML() {
   <!-- Sticky Navbar -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="brand-logo" aria-label="CallAxis Homepage">
-        <img src="logo.jpg" alt="CallAxis Logo" class="brand-logo-img">
-        <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
+      <a href="index.html" class="brand-logo" aria-label="${BRAND_NAME} Homepage">
+        <img src="logo-icon-512.png" alt="${BRAND_NAME}" class="brand-logo-img">
+        <span class="logo-text"><span class="logo-name-prefix">GetCall</span><span class="logo-name-accent">Axis</span></span>
       </a>
 
       <div class="nav-links-wrap">
@@ -1330,9 +1402,9 @@ function generateInsuranceOverviewHTML() {
           <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
 
-        <a href="tel:+15550100123" class="phone-link" aria-label="Call CallAxis Directly">
+        <a href="tel:${PHONE_TEL}" class="phone-link" aria-label="Call ${BRAND_NAME} Directly">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span class="phone-number">+1 (555) 010-0123</span>
+          <span class="phone-number">${PHONE_DISPLAY}</span>
         </a>
 
         <a href="#quoteForm" class="btn btn-teal nav-quote-btn">Get a Free Quote</a>
@@ -1423,7 +1495,7 @@ function generateInsuranceOverviewHTML() {
           <div class="success-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <h3>You're all set!</h3>
           <p>A licensed insurance agent will contact you shortly.</p>
-          <a href="tel:+15550100123" class="btn btn-ghost btn-block">Or call us now: +1 (555) 010-0123</a>
+          <a href="tel:${PHONE_TEL}" class="btn btn-ghost btn-block">Or call us now: ${PHONE_DISPLAY}</a>
         </div>
       </form>
     </div>

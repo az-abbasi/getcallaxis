@@ -1,22 +1,29 @@
 /**
- * CallAxis Interactive Engine & Particle Physics
+ * GetCallAxis Interactive Engine & Particle Physics
  * Vanilla JS - Zero External Dependencies
  */
 
+// MASTER BRAND CONSTANTS
+const BRAND_NAME = "GetCallAxis";
+const EMAIL = "contact@getcallaxis.com";
+
 // DUMMY NUMBER, REPLACE WITH CLIENT'S REAL NUMBER
-const PHONE_DISPLAY = "+1 (555) 010-0123";
-const PHONE_TEL = "+15550100123";
+const PHONE_DISPLAY = "+1 (215) 472-1722";
+const PHONE_TEL = "+12154721722";
 
 // DUMMY ADDRESS, REPLACE WITH CLIENT'S REAL ADDRESS
-const ADDRESS_DISPLAY = "1234 Business Park Drive, Suite 100, Dover, DE 19901";
+const ADDRESS_DISPLAY = "487 Maple Ridge Avenue, Westfield, NJ 07000, United States";
 
 const SITE_CONFIG = {
+  brandName: BRAND_NAME,
+  email: EMAIL,
   address: ADDRESS_DISPLAY,
   phoneDisplay: PHONE_DISPLAY,
   phoneTel: PHONE_TEL,
-  phone: PHONE_DISPLAY,
-  email: "arsalanmanunited@gmail.com"
+  phone: PHONE_DISPLAY
 };
+window.BRAND_NAME = BRAND_NAME;
+window.EMAIL = EMAIL;
 window.SITE_CONFIG = SITE_CONFIG;
 window.PHONE_DISPLAY = PHONE_DISPLAY;
 window.PHONE_TEL = PHONE_TEL;
@@ -260,66 +267,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ================= 2b. Quote Form Card 3D Tilt & Light Gradient =================
+  // ================= 2b. Quote Form Card (Straight - No Tilt) =================
   function initQuoteCardTilt() {
-    const card = document.querySelector('.form-card');
-    if (!card) return;
-
-    const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let isInputFocused = false;
-    let rafId = null;
-    let lastEvt = null;
-
-    // Pause tilt while any input/select/button inside card has focus or while typing
-    card.querySelectorAll('input, select, textarea').forEach(input => {
-      input.addEventListener('focus', () => {
-        isInputFocused = true;
-        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
-        card.classList.remove('is-tilting');
-      });
-      input.addEventListener('blur', () => {
-        isInputFocused = false;
-      });
-    });
-
-    const updateTilt = () => {
-      rafId = null;
-      if (!lastEvt || isTouch || prefersReduced || isInputFocused) return;
-      const rect = card.getBoundingClientRect();
-      const x = lastEvt.clientX - rect.left;
-      const y = lastEvt.clientY - rect.top;
-
-      card.style.setProperty('--mx', `${x}px`);
-      card.style.setProperty('--my', `${y}px`);
-
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-
-      // Rotate up to 7 degrees on X and Y
-      const rotateX = ((y - centerY) / centerY) * -7;
-      const rotateY = ((x - centerX) / centerX) * 7;
-
-      card.classList.add('is-tilting');
-      card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`;
-    };
-
-    card.addEventListener('mousemove', (e) => {
-      lastEvt = e;
-      if (!rafId) {
-        rafId = requestAnimationFrame(updateTilt);
-      }
-    });
-
-    card.addEventListener('mouseleave', () => {
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-        rafId = null;
-      }
-      lastEvt = null;
-      card.classList.remove('is-tilting');
-      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
-    });
+    // Form card kept straight with zero tilt/transform
   }
   initQuoteCardTilt();
 
@@ -332,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const activeLoader = document.getElementById('site-loader') || document.getElementById('splash-screen');
-  if (activeLoader && !sessionStorage.getItem('callaxis_session_seen')) {
+  if (activeLoader && !(sessionStorage.getItem('getcallaxis_session_seen'))) {
     setTimeout(() => {
       triggerHeroAnimation();
     }, 2000);
@@ -342,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ================= 4. Light / Dark Mode Toggle =================
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  const savedTheme = localStorage.getItem('callaxis_theme') || 'light';
+  const savedTheme = localStorage.getItem('getcallaxis_theme') || 'light';
 
   if (savedTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -355,7 +305,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentTheme = document.documentElement.getAttribute('data-theme');
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('callaxis_theme', newTheme);
+      localStorage.setItem('getcallaxis_theme', newTheme);
+      
     });
   }
 
@@ -1052,7 +1003,7 @@ document.addEventListener('DOMContentLoaded', () => {
         email: emailVal,
         submittedAt: new Date().toISOString()
       };
-      console.log('CallAxis Subpage Quote Submission:', submissionData);
+      console.log('GetCallAxis Subpage Quote Submission:', submissionData);
 
       setStep(4);
     });
@@ -1286,7 +1237,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ================= 14. "Why CallAxis" Cards Interactive Click Engine =================
+  // ================= 14. "Why GetCallAxis" Cards Interactive Click Engine =================
   const whyCards = document.querySelectorAll('.why-card');
   whyCards.forEach(card => {
     if (!card.hasAttribute('tabindex')) card.setAttribute('tabindex', '0');

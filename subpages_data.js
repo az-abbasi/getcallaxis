@@ -1,15 +1,17 @@
+const BRAND_NAME = "GetCallAxis";
+const EMAIL = "contact@getcallaxis.com";
 // DUMMY ADDRESS, REPLACE WITH CLIENT'S REAL ADDRESS
-const SITE_ADDRESS = "1234 Business Park Drive, Suite 100, Dover, DE 19901";
+const SITE_ADDRESS = "487 Maple Ridge Avenue, Westfield, NJ 07000, United States";
 
 const subpagesData = {
   "roofing.html": {
     type: "home-services",
-    title: "Roofing Repair & Replacement | CallAxis Referral Network",
+    title: "Roofing Repair & Replacement | GetCallAxis",
     heroTitle: "Roofing Repair & Replacement",
     categoryPill: "HOME SERVICES",
     heroSub: "Connect with licensed local roofers for repairs, full replacements, or storm damage claims, and get quotes without the cold calls.",
     howItWorksTitle: "How it works for roofing",
-    introP1: "When your home needs roof repairs or a complete replacement, finding a dependable contractor shouldn't feel like a full-time job. CallAxis connects you directly with top-rated, licensed, and insured roofing specialists in your local area.",
+    introP1: "When your home needs roof repairs or a complete replacement, finding a dependable contractor shouldn't feel like a full-time job. GetCallAxis connects you directly with top-rated, licensed, and insured roofing specialists in your local area.",
     introP2: "Our simple referral system allows you to request free, no-obligation quotes for asphalt shingles, metal roofing, tile, or storm damage restoration — giving you transparent pricing and quick response times.",
     benefits: [
       { title: "Asphalt, metal & tile roofing options", desc: "Repairs, complete replacements, and material guidance tailored to your local climate and home architecture." },
@@ -28,12 +30,12 @@ const subpagesData = {
   },
   "bathroom-remodel.html": {
     type: "home-services",
-    title: "Bathroom Remodeling Services | CallAxis Referral Network",
+    title: "Bathroom Remodeling Services | GetCallAxis",
     heroTitle: "Bathroom Remodel & Renovations",
     categoryPill: "HOME SERVICES",
     heroSub: "Transform your bathroom with local remodeling contractors specializing in walk-in showers, tub replacements, and full layout redesigns.",
     howItWorksTitle: "How it works for bathroom remodel",
-    introP1: "Upgrading your bathroom increases home value and improves everyday comfort. CallAxis links you with experienced bathroom renovation specialists who deliver high-quality craftsmanship on time and within budget.",
+    introP1: "Upgrading your bathroom increases home value and improves everyday comfort. GetCallAxis links you with experienced bathroom renovation specialists who deliver high-quality craftsmanship on time and within budget.",
     introP2: "Whether you're planning a quick tub-to-shower conversion or a luxury master bath overhaul, compare estimates from verified local remodelers today.",
     benefits: [
       { title: "Tub-to-shower conversions", desc: "Transform outdated bathtubs into sleek, accessible walk-in showers with modern glass enclosures." },
@@ -52,12 +54,12 @@ const subpagesData = {
   },
   "flooring.html": {
     type: "home-services",
-    title: "Flooring Installation & Repair | CallAxis Referral Network",
+    title: "Flooring Installation & Repair | GetCallAxis",
     heroTitle: "Flooring Installation & Refinishing",
     categoryPill: "HOME SERVICES",
     heroSub: "Upgrade your floors with licensed local installation specialists for hardwood, tile, luxury vinyl plank, and laminate.",
     howItWorksTitle: "How it works for flooring",
-    introP1: "New flooring can completely transform the aesthetic and warmth of your home. CallAxis simplifies your search by matching you with skilled local flooring installers and refinishers.",
+    introP1: "New flooring can completely transform the aesthetic and warmth of your home. GetCallAxis simplifies your search by matching you with skilled local flooring installers and refinishers.",
     introP2: "From pet-friendly luxury vinyl plank to timeless solid hardwood and designer ceramic tile, get free estimates from top local crews.",
     benefits: [
       { title: "Hardwood, tile, vinyl & laminate", desc: "High-quality material selection for every room, budget, and interior design aesthetic." },
@@ -76,12 +78,12 @@ const subpagesData = {
   },
   "hvac.html": {
     type: "home-services",
-    title: "HVAC Repair & Replacement | CallAxis Referral Network",
+    title: "HVAC Repair & Replacement | GetCallAxis",
     heroTitle: "Heating, Ventilation & Air Conditioning (HVAC)",
     categoryPill: "HOME SERVICES",
     heroSub: "Keep your home comfortable year-round with licensed local HVAC technicians for AC repair, furnace replacement, and heat pumps.",
     howItWorksTitle: "How it works for hvac",
-    introP1: "HVAC emergencies never happen at a convenient time. CallAxis connects you rapidly with certified heating and cooling contractors ready to diagnose, repair, or replace your climate system.",
+    introP1: "HVAC emergencies never happen at a convenient time. GetCallAxis connects you rapidly with certified heating and cooling contractors ready to diagnose, repair, or replace your climate system.",
     introP2: "Compare upfront quotes on high-efficiency AC units, heat pumps, gas furnaces, and ductwork installations to stay cool in summer and warm in winter.",
     benefits: [
       { title: "Furnace, AC & heat pump service", desc: "Complete heating and cooling installation, emergency repair, and seasonal system tune-ups." },
@@ -100,12 +102,12 @@ const subpagesData = {
   },
   "windows.html": {
     type: "home-services",
-    title: "Window Replacement & Repair | CallAxis Referral Network",
+    title: "Window Replacement & Repair | GetCallAxis",
     heroTitle: "Window Replacement & Installation",
     categoryPill: "HOME SERVICES",
     heroSub: "Lower your energy bills and enhance curb appeal with double-pane replacement windows installed by licensed local contractors.",
     howItWorksTitle: "How it works for windows",
-    introP1: "Drafty or broken windows drain your home's energy efficiency. CallAxis links you with window replacement specialists offering energy-efficient vinyl, wood, and fiberglass options.",
+    introP1: "Drafty or broken windows drain your home's energy efficiency. GetCallAxis links you with window replacement specialists offering energy-efficient vinyl, wood, and fiberglass options.",
     introP2: "Get free estimates for single window repairs, bay window accents, or full-home energy-efficient window upgrades.",
     benefits: [
       { title: "Double & triple-pane options", desc: "Energy-efficient replacement windows designed to lower heating and cooling costs year-round." },
@@ -124,12 +126,12 @@ const subpagesData = {
   },
   "gutters.html": {
     type: "home-services",
-    title: "Gutter Installation & Guards | CallAxis Referral Network",
+    title: "Gutter Installation & Guards | GetCallAxis",
     heroTitle: "Gutter Installation, Repair & Guards",
     categoryPill: "HOME SERVICES",
     heroSub: "Protect your home's roof and foundation with seamless aluminum gutters, leaf guards, and downspout drainage solutions.",
     howItWorksTitle: "How it works for gutters",
-    introP1: "Clogged or damaged gutters cause severe water damage to your roofline, siding, and foundation. CallAxis connects you with local gutter pros who install custom seamless gutters and high-flow leaf protection systems.",
+    introP1: "Clogged or damaged gutters cause severe water damage to your roofline, siding, and foundation. GetCallAxis connects you with local gutter pros who install custom seamless gutters and high-flow leaf protection systems.",
     introP2: "Get fast estimates for gutter repairs, guard installations, or complete seamless gutter system replacements.",
     benefits: [
       { title: "Seamless gutter installation", desc: "Custom-fit seamless aluminum and copper gutters extruded on-site to eliminate leak seams." },
@@ -148,12 +150,12 @@ const subpagesData = {
   },
   "siding.html": {
     type: "home-services",
-    title: "Siding Replacement & Repair | CallAxis Referral Network",
+    title: "Siding Replacement & Repair | GetCallAxis",
     heroTitle: "Exterior Siding Installation & Repair",
     categoryPill: "HOME SERVICES",
     heroSub: "Boost curb appeal and thermal insulation with top-grade vinyl, fiber cement, and wood siding installed by local pros.",
     howItWorksTitle: "How it works for siding",
-    introP1: "Outdated or damaged siding compromises your home's weather protection and visual appeal. CallAxis connects you with certified exterior siding contractors offering durable, low-maintenance cladding.",
+    introP1: "Outdated or damaged siding compromises your home's weather protection and visual appeal. GetCallAxis connects you with certified exterior siding contractors offering durable, low-maintenance cladding.",
     introP2: "Compare quotes for James Hardie fiber cement, insulated vinyl siding, or wood lap siding with professional color consultation.",
     benefits: [
       { title: "Vinyl, fiber cement & wood siding", desc: "Durable exterior cladding options from industry-leading manufacturers like James Hardie." },
@@ -172,12 +174,12 @@ const subpagesData = {
   },
   "kitchen-remodel.html": {
     type: "home-services",
-    title: "Kitchen Remodeling Services | CallAxis Referral Network",
+    title: "Kitchen Remodeling Services | GetCallAxis",
     heroTitle: "Kitchen Remodeling & Design",
     categoryPill: "HOME SERVICES",
     heroSub: "Build your dream kitchen with verified local remodeling contractors for custom cabinets, countertops, lighting, and layout changes.",
     howItWorksTitle: "How it works for kitchen remodel",
-    introP1: "The kitchen is the heart of your home. CallAxis matches you with top kitchen designers and licensed remodelers who turn your vision into reality.",
+    introP1: "The kitchen is the heart of your home. GetCallAxis matches you with top kitchen designers and licensed remodelers who turn your vision into reality.",
     introP2: "From solid quartz countertops and solid wood cabinets to complete wall removals and island additions, request free quotes today.",
     benefits: [
       { title: "Cabinet refacing & full replacement", desc: "Upgrade kitchen storage with custom cabinets, refacing, or modern soft-close hardware." },
@@ -196,12 +198,12 @@ const subpagesData = {
   },
   "plumbing.html": {
     type: "home-services",
-    title: "Plumbing Services & Repairs | CallAxis Referral Network",
+    title: "Plumbing Services & Repairs | GetCallAxis",
     heroTitle: "Plumbing Repair, Installation & Drains",
     categoryPill: "HOME SERVICES",
     heroSub: "Get fast help for water heaters, clogged drains, pipe leaks, and fixture replacements from licensed local plumbers.",
     howItWorksTitle: "How it works for plumbing",
-    introP1: "Plumbing problems require rapid, professional action before minor leaks cause catastrophic water damage. CallAxis connects you immediately with vetted, licensed local plumbers.",
+    introP1: "Plumbing problems require rapid, professional action before minor leaks cause catastrophic water damage. GetCallAxis connects you immediately with vetted, licensed local plumbers.",
     introP2: "Compare upfront estimates for emergency leak fixes, tankless water heater installations, drain cleaning, or sewer line inspections.",
     benefits: [
       { title: "Emergency & same-day service", desc: "Fast response for burst pipes, major leaks, clogged drains, and sewer backups." },
@@ -220,12 +222,12 @@ const subpagesData = {
   },
   "electrical.html": {
     type: "home-services",
-    title: "Electrical Services & Upgrades | CallAxis Referral Network",
+    title: "Electrical Services & Upgrades | GetCallAxis",
     heroTitle: "Electrical Panel, Wiring & Generator Services",
     categoryPill: "HOME SERVICES",
     heroSub: "Power your home safely with licensed master electricians for panel upgrades, EV chargers, generators, and rewiring.",
     howItWorksTitle: "How it works for electrical",
-    introP1: "Electrical work demands certified expertise to ensure safety and compliance with national codes. CallAxis connects you with licensed electricians in your area.",
+    introP1: "Electrical work demands certified expertise to ensure safety and compliance with national codes. GetCallAxis connects you with licensed electricians in your area.",
     introP2: "Get free quotes for 200A panel upgrades, Level 2 EV charger installations, home backup generators, or decorative lighting.",
     benefits: [
       { title: "Panel upgrades & rewiring", desc: "Upgrade 100A to 200A/400A panels, replace outdated knob-and-tube, and expand capacity." },
@@ -244,12 +246,12 @@ const subpagesData = {
   },
   "solar.html": {
     type: "home-services",
-    title: "Solar Panel Installation | CallAxis Referral Network",
+    title: "Solar Panel Installation | GetCallAxis",
     heroTitle: "Solar Panel & Battery Storage Installation",
     categoryPill: "HOME SERVICES",
     heroSub: "Eliminate high electric bills and lock in energy independence with residential solar panel systems and battery backup.",
     howItWorksTitle: "How it works for solar",
-    introP1: "Switching to solar power reduces monthly energy bills while increasing your home's resale value. CallAxis connects you with top-rated local solar installers.",
+    introP1: "Switching to solar power reduces monthly energy bills while increasing your home's resale value. GetCallAxis connects you with top-rated local solar installers.",
     introP2: "Request a free solar roof assessment to learn how federal tax incentives (30% ITC) and net metering can maximize your savings.",
     benefits: [
       { title: "Free solar savings estimate", desc: "Customized roof assessment and solar output projection with zero obligation." },
@@ -268,12 +270,12 @@ const subpagesData = {
   },
   "garage-doors.html": {
     type: "home-services",
-    title: "Garage Door Repair & Replacement | CallAxis Referral Network",
+    title: "Garage Door Repair & Replacement | GetCallAxis",
     heroTitle: "Garage Door Repair & Installation",
     categoryPill: "HOME SERVICES",
     heroSub: "Restore security and convenience with local garage door technicians for spring repair, opener replacement, and new doors.",
     howItWorksTitle: "How it works for garage doors",
-    introP1: "A broken garage door spring or failing opener leaves your vehicle trapped and compromises home security. CallAxis links you with fast local repair teams.",
+    introP1: "A broken garage door spring or failing opener leaves your vehicle trapped and compromises home security. GetCallAxis links you with fast local repair teams.",
     introP2: "Get free estimates for heavy-duty spring replacements, quiet belt-drive openers, or stylish insulated garage doors.",
     benefits: [
       { title: "Same-week repair availability", desc: "Broken spring replacement, cable repairs, off-track fixes, and sensor realignments." },
@@ -292,12 +294,12 @@ const subpagesData = {
   },
   "foundations.html": {
     type: "home-services",
-    title: "Foundation Repair & Waterproofing | CallAxis Referral Network",
+    title: "Foundation Repair & Waterproofing | GetCallAxis",
     heroTitle: "Foundation Repair & Basement Waterproofing",
     categoryPill: "HOME SERVICES",
     heroSub: "Protect your home's structural integrity with foundation repair specialists for crack injection, piering, and sump pumps.",
     howItWorksTitle: "How it works for foundations & waterproofing",
-    introP1: "Foundation cracks, bowing basement walls, or water intrusion can cause severe damage if left unaddressed. CallAxis connects you with certified foundation repair experts.",
+    introP1: "Foundation cracks, bowing basement walls, or water intrusion can cause severe damage if left unaddressed. GetCallAxis connects you with certified foundation repair experts.",
     introP2: "Request a free structural inspection to evaluate soil settlement, water drainage, wall bowing, and basement waterproofing needs.",
     benefits: [
       { title: "Foundation crack & settlement repair", desc: "Helical piers, wall anchors, carbon fiber straps, and polyurethane crack injection." },
@@ -316,12 +318,12 @@ const subpagesData = {
   },
   "auto-insurance.html": {
     type: "insurance",
-    title: "Auto Insurance Quotes | CallAxis Referral Network",
+    title: "Auto Insurance Quotes | GetCallAxis",
     heroTitle: "Auto Insurance Coverage",
     categoryPill: "INSURANCE",
     heroSub: "Compare competitive auto insurance quotes from top-rated carriers for liability, collision, comprehensive, and multi-car discounts.",
     howItWorksTitle: "How it works for auto insurance",
-    introP1: "Car insurance rates fluctuate based on your location, driving record, and coverage limits. CallAxis connects you with licensed insurance agents who shop multiple carriers on your behalf.",
+    introP1: "Car insurance rates fluctuate based on your location, driving record, and coverage limits. GetCallAxis connects you with licensed insurance agents who shop multiple carriers on your behalf.",
     introP2: "Whether you need state-minimum liability, comprehensive protection for a new vehicle, or multi-policy bundle savings, get free quotes in minutes.",
     benefits: [
       { title: "Liability, collision & comprehensive options", desc: "Protect against accidents, theft, weather damage, windshield cracks, and uninsured drivers." },
@@ -339,12 +341,12 @@ const subpagesData = {
   },
   "health-insurance.html": {
     type: "insurance",
-    title: "Health Insurance Plans | CallAxis Referral Network",
+    title: "Health Insurance Plans | GetCallAxis",
     heroTitle: "Health Insurance Plans & Subsidies",
     categoryPill: "INSURANCE",
     heroSub: "Find affordable health insurance coverage with licensed agents specializing in ACA marketplace plans, private insurance, and subsidies.",
     howItWorksTitle: "How it works for health insurance",
-    introP1: "Navigating health insurance options can feel overwhelming. CallAxis simplifies the process by matching you with licensed state agents who help you select the ideal medical plan.",
+    introP1: "Navigating health insurance options can feel overwhelming. GetCallAxis simplifies the process by matching you with licensed state agents who help you select the ideal medical plan.",
     introP2: "Explore ACA marketplace coverage, subsidy eligibility, PPO/HMO networks, dental/vision add-ons, and short-term health plans.",
     benefits: [
       { title: "ACA marketplace & private plan options", desc: "On-exchange and off-exchange health insurance plans for individuals, families, and self-employed." },
@@ -362,12 +364,12 @@ const subpagesData = {
   },
   "home-insurance.html": {
     type: "insurance",
-    title: "Home Insurance Quotes | CallAxis Referral Network",
+    title: "Home Insurance Quotes | GetCallAxis",
     heroTitle: "Homeowners & Renters Insurance",
     categoryPill: "INSURANCE",
     heroSub: "Protect your home, roof, and personal property against fire, theft, and natural disasters with top home insurance policies.",
     howItWorksTitle: "How it works for home insurance",
-    introP1: "Your home is likely your biggest financial asset. CallAxis connects you with licensed insurance brokers who find policies offering robust protection at competitive rates.",
+    introP1: "Your home is likely your biggest financial asset. GetCallAxis connects you with licensed insurance brokers who find policies offering robust protection at competitive rates.",
     introP2: "Compare quotes for homeowners insurance (HO-3), condo coverage (HO-6), or renters policies (HO-4) with bundle discounts for auto insurance.",
     benefits: [
       { title: "Dwelling, liability & personal property cover", desc: "Comprehensive protection for your house structure, roof, detached garages, and belongings." },
@@ -385,12 +387,12 @@ const subpagesData = {
   },
   "life-insurance.html": {
     type: "insurance",
-    title: "Life Insurance Quotes | CallAxis Referral Network",
+    title: "Life Insurance Quotes | GetCallAxis",
     heroTitle: "Term & Whole Life Insurance",
     categoryPill: "INSURANCE",
     heroSub: "Secure your family's financial future with affordable term life, whole life, and no-exam policy options from top insurance carriers.",
     howItWorksTitle: "How it works for life insurance",
-    introP1: "Life insurance provides essential financial protection for your loved ones, covering mortgages, education costs, and lost income. CallAxis connects you with trusted life insurance specialists.",
+    introP1: "Life insurance provides essential financial protection for your loved ones, covering mortgages, education costs, and lost income. GetCallAxis connects you with trusted life insurance specialists.",
     introP2: "Get free personalized quotes for 10-to-30 year term policies, permanent whole life insurance, or simplified issue policies without medical exams.",
     benefits: [
       { title: "Term & whole life policy options", desc: "10, 20, 30-year term policies or permanent life insurance with guaranteed cash value growth." },
@@ -408,12 +410,12 @@ const subpagesData = {
   },
   "medicare-insurance.html": {
     type: "home_services",
-    title: "Medicare Coverage Options | CallAxis Referral Network",
+    title: "Medicare Coverage Options | GetCallAxis",
     heroTitle: "Medicare",
     categoryPill: "HOME SERVICES",
     heroSub: "Get help comparing Medicare options from licensed agents.",
     howItWorksTitle: "How it works for Medicare",
-    introP1: "Navigating Medicare options can feel overwhelming with numerous plans, rules, and enrollment deadlines. CallAxis connects you with independent, licensed insurance agents who can help clarify your options and guide you through the process.",
+    introP1: "Navigating Medicare options can feel overwhelming with numerous plans, rules, and enrollment deadlines. GetCallAxis connects you with independent, licensed insurance agents who can help clarify your options and guide you through the process.",
     introP2: "Whether you are approaching age 65 or looking to evaluate your current healthcare coverage during an open enrollment period, compare available options with professional guidance at no cost to you.",
     benefits: [
       { title: "Medicare Advantage plan comparisons", desc: "Explore all-in-one Medicare Advantage (Part C) options that may bundle medical, hospital, and supplemental benefits." },
@@ -433,12 +435,12 @@ const subpagesData = {
   "insurance.html": {
     isOverview: true,
     type: "overview",
-    title: "Insurance Referral Network | CallAxis",
+    title: "Insurance Referral Network | GetCallAxis",
     heroTitle: "Insurance Referral Network",
     categoryPill: "INSURANCE OVERVIEW",
     heroSub: "Connect with licensed insurance agents for Auto, Health, Home, and Life options tailored to your needs.",
     howItWorksTitle: "Comprehensive Insurance Protection",
-    introP1: "CallAxis connects you with licensed local and national insurance professionals who help you find the right policy for your family, vehicle, and home.",
+    introP1: "GetCallAxis connects you with licensed local and national insurance professionals who help you find the right policy for your family, vehicle, and home.",
     introP2: "Explore our insurance coverage categories below or start a quick quote request to compare rates.",
     benefits: [
       { title: "Licensed Independent Agents", desc: "Access top insurance agents who shop multiple carriers for the best rates." },
@@ -458,12 +460,12 @@ const subpagesData = {
   "home-services.html": {
     isOverview: true,
     type: "overview",
-    title: "Home Services Referral Network | CallAxis",
+    title: "Home Services Referral Network | GetCallAxis",
     heroTitle: "Home Services Referral Network",
     categoryPill: "HOME SERVICES OVERVIEW",
     heroSub: "Connect with background-checked local contractors for roofing, remodeling, HVAC, plumbing, solar, Medicare, and emergency home repairs.",
     howItWorksTitle: "Verified Local Service Professionals",
-    introP1: "CallAxis makes finding trusted home service contractors fast and stress-free. We connect you with top-rated local specialists across home improvement trades and essential services.",
+    introP1: "GetCallAxis makes finding trusted home service contractors fast and stress-free. We connect you with top-rated local specialists across home improvement trades and essential services.",
     introP2: "Select your service below or request a free quote to get matched with verified pros in your zip code.",
     benefits: [
       { title: "Verified Local Contractors", desc: "Licensed, insured, and background-checked home improvement professionals." },

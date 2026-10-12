@@ -1,0 +1,21 @@
+﻿{
+    "icons":  [
+                  {
+                      "type":  "image/png",
+                      "sizes":  "192x192",
+                      "src":  "/icon-192.png"
+                  },
+                  {
+                      "type":  "image/png",
+                      "sizes":  "512x512",
+                      "src":  "/logo-icon-512.png"
+                  }
+              ],
+    "description":  "Connect with Local Insurance Agents \u0026 Home Service Pros",
+    "background_color":  "#0B1220",
+    "theme_color":  "#0F766E",
+    "name":  "GetCallAxis",
+    "start_url":  "/",
+    "display":  "standalone",
+    "short_name":  "GetCallAxis"
+}
