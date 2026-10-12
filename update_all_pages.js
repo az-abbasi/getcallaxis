@@ -377,7 +377,8 @@ const subpagesData = [
     related: [
       { title: "Health Insurance", url: "health-insurance.html" },
       { title: "Home Insurance", url: "home-insurance.html" },
-      { title: "Life Insurance", url: "life-insurance.html" }
+      { title: "Life Insurance", url: "life-insurance.html" },
+      { title: "Medicare Insurance", url: "medicare-insurance.html" }
     ]
   },
   {
@@ -401,7 +402,8 @@ const subpagesData = [
     related: [
       { title: "Auto Insurance", url: "auto-insurance.html" },
       { title: "Home Insurance", url: "home-insurance.html" },
-      { title: "Life Insurance", url: "life-insurance.html" }
+      { title: "Life Insurance", url: "life-insurance.html" },
+      { title: "Medicare Insurance", url: "medicare-insurance.html" }
     ]
   },
   {
@@ -425,7 +427,8 @@ const subpagesData = [
     related: [
       { title: "Auto Insurance", url: "auto-insurance.html" },
       { title: "Health Insurance", url: "health-insurance.html" },
-      { title: "Life Insurance", url: "life-insurance.html" }
+      { title: "Life Insurance", url: "life-insurance.html" },
+      { title: "Medicare Insurance", url: "medicare-insurance.html" }
     ]
   },
   {
@@ -449,18 +452,19 @@ const subpagesData = [
     related: [
       { title: "Auto Insurance", url: "auto-insurance.html" },
       { title: "Health Insurance", url: "health-insurance.html" },
-      { title: "Home Insurance", url: "home-insurance.html" }
+      { title: "Home Insurance", url: "home-insurance.html" },
+      { title: "Medicare Insurance", url: "medicare-insurance.html" }
     ]
   },
   {
     filename: "medicare-insurance.html",
-    service: "Medicare",
-    service_full: "Medicare Coverage",
-    category: "Home Services",
-    cat_slug: "home-services",
+    service: "Medicare Insurance",
+    service_full: "Medicare Insurance",
+    category: "Insurance",
+    cat_slug: "insurance",
     tagline: "Get help comparing Medicare options from licensed agents.",
     meta_desc: "Get help comparing Medicare Advantage, Medigap supplements, and Part D prescription options from independent licensed agents.",
-    main_title: "How it works for Medicare",
+    main_title: "How it works for Medicare Insurance",
     para1: "Navigating Medicare options can feel overwhelming with numerous plans, rules, and enrollment deadlines. GetCallAxis connects you with independent, licensed insurance agents who can help clarify your options and guide you through the process.",
     para2: "Whether you are approaching age 65 or looking to evaluate your current healthcare coverage during an open enrollment period, compare available options with professional guidance at no cost to you.",
     benefits: [
@@ -469,12 +473,12 @@ const subpagesData = [
       "Part D prescription drug coverage",
       "Guidance during enrollment periods"
     ],
-    related_heading: "Other home services you might need",
+    related_heading: "Other insurance you might need",
     related: [
-      { title: "Roofing", url: "roofing.html" },
-      { title: "HVAC", url: "hvac.html" },
-      { title: "Plumbing", url: "plumbing.html" },
-      { title: "Electrical", url: "electrical.html" }
+      { title: "Health Insurance", url: "health-insurance.html" },
+      { title: "Life Insurance", url: "life-insurance.html" },
+      { title: "Auto Insurance", url: "auto-insurance.html" },
+      { title: "Home Insurance", url: "home-insurance.html" }
     ]
   }
 ];
@@ -531,6 +535,7 @@ const sharedFooterHTML = `  <!-- Shared Site Footer -->
           <li><a href="health-insurance.html" class="footer-link">Health Insurance</a></li>
           <li><a href="home-insurance.html" class="footer-link">Home Insurance</a></li>
           <li><a href="life-insurance.html" class="footer-link">Life Insurance</a></li>
+          <li><a href="medicare-insurance.html" class="footer-link">Medicare Insurance</a></li>
         </ul>
       </div>
 
@@ -541,7 +546,6 @@ const sharedFooterHTML = `  <!-- Shared Site Footer -->
           <li><a href="bathroom-remodel.html" class="footer-link">Bathroom Remodel</a></li>
           <li><a href="hvac.html" class="footer-link">HVAC</a></li>
           <li><a href="solar.html" class="footer-link">Solar</a></li>
-          <li><a href="medicare-insurance.html" class="footer-link">Medicare</a></li>
           <li><a href="home-services.html" class="footer-link">View all &rarr;</a></li>
         </ul>
       </div>
@@ -566,7 +570,7 @@ const sharedFooterHTML = `  <!-- Shared Site Footer -->
 // Shared Hero Component Generator
 function generateHeroHTML({ category, cat_slug, service, tagline, isOverview = false }) {
   const isInsurance = category.toLowerCase().includes('insurance');
-  const isMedicare = service.toLowerCase() === 'medicare';
+  const isMedicare = service.toLowerCase().includes('medicare');
 
   let disclaimerP1 = isInsurance
     ? `<strong>Disclaimer:</strong> ${BRAND_NAME} is a free referral service. We are not an insurance carrier, agency or broker, and we do not issue policies or give coverage advice. The agents we connect you with are independent and licensed in their own right.`
@@ -729,6 +733,7 @@ function generateSubpageHTML(data) {
                 <a href="health-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Health Insurance</span></a>
                 <a href="home-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Home Insurance</span></a>
                 <a href="life-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Life Insurance</span></a>
+                <a href="medicare-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Medicare Insurance</span></a>
               </div>
             </div>
           </div>
@@ -754,7 +759,6 @@ function generateSubpageHTML(data) {
                 <a href="solar.html" class="dropdown-item" role="menuitem"><span class="item-title">Solar</span></a>
                 <a href="garage-doors.html" class="dropdown-item" role="menuitem"><span class="item-title">Garage Doors</span></a>
                 <a href="foundations.html" class="dropdown-item" role="menuitem"><span class="item-title">Foundations &amp; Waterproofing</span></a>
-                <a href="medicare-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Medicare</span></a>
                 <a href="home-services.html" class="dropdown-item view-all-item" role="menuitem"><span class="item-title">View All &rarr;</span></a>
               </div>
             </div>
@@ -1007,7 +1011,7 @@ function generateHomeServicesOverviewHTML() {
                 <a href="health-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Health Insurance</span></a>
                 <a href="home-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Home Insurance</span></a>
                 <a href="life-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Life Insurance</span></a>
-                <a href="medicare-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Medicare</span></a>
+                <a href="medicare-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Medicare Insurance</span></a>
               </div>
             </div>
           </div>
@@ -1108,7 +1112,6 @@ function generateHomeServicesOverviewHTML() {
               <option value="Solar">Solar</option>
               <option value="Garage Doors">Garage Doors</option>
               <option value="Foundations & Waterproofing">Foundations & Waterproofing</option>
-              <option value="Medicare">Medicare</option>
             </select>
           </label>
           <label class="field">
@@ -1259,12 +1262,6 @@ function generateHomeServicesOverviewHTML() {
           <span class="go-link">Get a quote &rarr;</span>
         </a>
 
-        <a href="medicare-insurance.html" class="hub-card card-hover hue-cyan" tabindex="0">
-          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-          <h3>Medicare</h3>
-          <p>Get help comparing Medicare Advantage, Supplement &amp; Part D options.</p>
-          <span class="go-link">Get a quote &rarr;</span>
-        </a>
       </div>
     </div>
   </section>
@@ -1360,6 +1357,7 @@ function generateInsuranceOverviewHTML() {
                 <a href="health-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Health Insurance</span></a>
                 <a href="home-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Home Insurance</span></a>
                 <a href="life-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Life Insurance</span></a>
+                <a href="medicare-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Medicare Insurance</span></a>
               </div>
             </div>
           </div>
@@ -1385,7 +1383,6 @@ function generateInsuranceOverviewHTML() {
                 <a href="solar.html" class="dropdown-item" role="menuitem"><span class="item-title">Solar</span></a>
                 <a href="garage-doors.html" class="dropdown-item" role="menuitem"><span class="item-title">Garage Doors</span></a>
                 <a href="foundations.html" class="dropdown-item" role="menuitem"><span class="item-title">Foundations &amp; Waterproofing</span></a>
-                <a href="medicare-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Medicare</span></a>
                 <a href="home-services.html" class="dropdown-item view-all-item" role="menuitem"><span class="item-title">View All &rarr;</span></a>
               </div>
             </div>
@@ -1452,6 +1449,7 @@ function generateInsuranceOverviewHTML() {
               <option value="Health Insurance">Health Insurance</option>
               <option value="Home Insurance">Home Insurance</option>
               <option value="Life Insurance">Life Insurance</option>
+              <option value="Medicare Insurance">Medicare Insurance</option>
             </select>
           </label>
           <label class="field">
@@ -1536,6 +1534,13 @@ function generateInsuranceOverviewHTML() {
           <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
           <h3>Life Insurance</h3>
           <p>Term & whole life insurance policies to protect your family's future.</p>
+          <span class="go-link">Get a quote &rarr;</span>
+        </a>
+
+        <a href="medicare-insurance.html" class="hub-card card-hover hue-cyan" tabindex="0">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Medicare Insurance</h3>
+          <p>Get help comparing Medicare Advantage, Medigap &amp; Part D options.</p>
           <span class="go-link">Get a quote &rarr;</span>
         </a>
       </div>

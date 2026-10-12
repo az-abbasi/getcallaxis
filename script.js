@@ -532,7 +532,8 @@ document.addEventListener('DOMContentLoaded', () => {
       { id: 'auto', label: 'Auto Insurance' },
       { id: 'health', label: 'Health Insurance' },
       { id: 'home', label: 'Home Insurance' },
-      { id: 'life', label: 'Life Insurance' }
+      { id: 'life', label: 'Life Insurance' },
+      { id: 'medicare', label: 'Medicare Insurance' }
     ],
     home_services: [
       { id: 'roofing', label: 'Roofing' },
@@ -547,8 +548,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { id: 'electrical', label: 'Electrical' },
       { id: 'solar', label: 'Solar' },
       { id: 'garage', label: 'Garage Doors' },
-      { id: 'foundation', label: 'Foundations & Waterproofing' },
-      { id: 'medicare', label: 'Medicare' }
+      { id: 'foundation', label: 'Foundations & Waterproofing' }
     ]
   };
 
@@ -577,8 +577,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!catCardInsurance || !catCardHome) return;
     if (category === 'insurance') {
       catCardInsurance.classList.add('active');
-      catCardInsurance.querySelector('input').checked = true;
+      const insRadio = catCardInsurance.querySelector('input');
+      if (insRadio) insRadio.checked = true;
       catCardHome.classList.remove('active');
+      const homeRadio = catCardHome.querySelector('input');
+      if (homeRadio) homeRadio.checked = false;
       if (specificServiceSelect) {
         const curVal = specificServiceSelect.value;
         const isInsurance = SERVICE_OPTIONS.insurance.some(o => o.id === curVal);
@@ -586,8 +589,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       catCardHome.classList.add('active');
-      catCardHome.querySelector('input').checked = true;
+      const homeRadio = catCardHome.querySelector('input');
+      if (homeRadio) homeRadio.checked = true;
       catCardInsurance.classList.remove('active');
+      const insRadio = catCardInsurance.querySelector('input');
+      if (insRadio) insRadio.checked = false;
       if (specificServiceSelect) {
         const curVal = specificServiceSelect.value;
         const isHome = SERVICE_OPTIONS.home_services.some(o => o.id === curVal);
@@ -598,6 +604,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (catCardInsurance) catCardInsurance.addEventListener('click', () => setCategory('insurance'));
   if (catCardHome) catCardHome.addEventListener('click', () => setCategory('home_services'));
+
+  if (specificServiceSelect) {
+    specificServiceSelect.addEventListener('change', () => {
+      const curVal = specificServiceSelect.value;
+      const isInsurance = SERVICE_OPTIONS.insurance.some(o => o.id === curVal);
+      if (isInsurance) {
+        setCategory('insurance');
+      } else {
+        const isHome = SERVICE_OPTIONS.home_services.some(o => o.id === curVal);
+        if (isHome) setCategory('home_services');
+      }
+    });
+  }
 
   if (btnToStep2) {
     btnToStep2.addEventListener('click', () => {
@@ -701,6 +720,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.getElementById('conf-ref-id')) document.getElementById('conf-ref-id').textContent = refId;
         if (document.getElementById('conf-service-display')) document.getElementById('conf-service-display').textContent = selectedServiceText;
         if (document.getElementById('conf-phone-display')) document.getElementById('conf-phone-display').textContent = phoneInput.value.trim();
+
+        const confDesc = document.querySelector('.conf-desc');
+        if (confDesc) {
+          const zipVal = document.getElementById('zip_code') ? document.getElementById('zip_code').value.trim() : '';
+          confDesc.innerHTML = `Thank you, <strong id="conf-name-display">${nameInput.value.trim()}</strong>. We are matching your request for <strong>${selectedServiceText}</strong> with pre-screened professionals in zip code <strong id="conf-zip-display">${zipVal}</strong>.`;
+        }
 
         if (document.getElementById('form-header-title')) document.getElementById('form-header-title').textContent = 'Quote Request Submitted!';
         if (document.getElementById('form-header-subtitle')) document.getElementById('form-header-subtitle').textContent = 'Your local matching request is now active';

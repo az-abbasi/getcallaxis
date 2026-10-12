@@ -335,7 +335,8 @@ const subpagesData = {
     related: [
       { name: "Health Insurance", url: "health-insurance.html", desc: "Individual, family & supplemental health coverage." },
       { name: "Home Insurance", url: "home-insurance.html", desc: "Bundle home & auto for maximum multi-policy discounts." },
-      { name: "Life Insurance", url: "life-insurance.html", desc: "Term & whole life insurance policy options." }
+      { name: "Life Insurance", url: "life-insurance.html", desc: "Term & whole life insurance policy options." },
+      { name: "Medicare Insurance", url: "medicare-insurance.html", desc: "Medicare Advantage, Medigap & Part D options." }
     ],
     formOptions: ["Full Coverage (Collision + Comprehensive)", "Liability Only (State Minimum)", "Multi-Car Discount", "Bundle Auto + Home"]
   },
@@ -358,7 +359,8 @@ const subpagesData = {
     related: [
       { name: "Auto Insurance", url: "auto-insurance.html", desc: "Liability, collision & multi-car policy options." },
       { name: "Life Insurance", url: "life-insurance.html", desc: "Protect your family's financial future with life coverage." },
-      { name: "Home Insurance", url: "home-insurance.html", desc: "Protect your property & personal belongings." }
+      { name: "Home Insurance", url: "home-insurance.html", desc: "Protect your property & personal belongings." },
+      { name: "Medicare Insurance", url: "medicare-insurance.html", desc: "Medicare Advantage, Medigap & Part D options." }
     ],
     formOptions: ["Individual Plan", "Family Health Coverage", "Self-Employed / Business", "Short-Term / Gap Insurance"]
   },
@@ -381,7 +383,8 @@ const subpagesData = {
     related: [
       { name: "Auto Insurance", url: "auto-insurance.html", desc: "Bundle auto with home for maximum discount." },
       { name: "Life Insurance", url: "life-insurance.html", desc: "Mortgage protection life insurance policies." },
-      { name: "Health Insurance", url: "health-insurance.html", desc: "ACA marketplace & private medical insurance." }
+      { name: "Health Insurance", url: "health-insurance.html", desc: "ACA marketplace & private medical insurance." },
+      { name: "Medicare Insurance", url: "medicare-insurance.html", desc: "Medicare Advantage, Medigap & Part D options." }
     ],
     formOptions: ["Single Family Homeowner", "Condo Owner (HO-6)", "Renters Insurance (HO-4)", "Multi-Policy Home + Auto"]
   },
@@ -404,17 +407,18 @@ const subpagesData = {
     related: [
       { name: "Auto Insurance", url: "auto-insurance.html", desc: "Collision, liability & multi-vehicle coverage." },
       { name: "Health Insurance", url: "health-insurance.html", desc: "ACA marketplace & private medical insurance." },
-      { name: "Home Insurance", url: "home-insurance.html", desc: "Protect your house structure & belongings." }
+      { name: "Home Insurance", url: "home-insurance.html", desc: "Protect your house structure & belongings." },
+      { name: "Medicare Insurance", url: "medicare-insurance.html", desc: "Medicare Advantage, Medigap & Part D options." }
     ],
     formOptions: ["Term Life (10-30 Years)", "Whole Life / Permanent", "No Medical Exam Life", "Mortgage Protection Life"]
   },
   "medicare-insurance.html": {
-    type: "home_services",
-    title: "Medicare Coverage Options | GetCallAxis",
-    heroTitle: "Medicare",
-    categoryPill: "HOME SERVICES",
+    type: "insurance",
+    title: "Medicare Insurance | GetCallAxis",
+    heroTitle: "Medicare Insurance",
+    categoryPill: "INSURANCE",
     heroSub: "Get help comparing Medicare options from licensed agents.",
-    howItWorksTitle: "How it works for Medicare",
+    howItWorksTitle: "How it works for Medicare Insurance",
     introP1: "Navigating Medicare options can feel overwhelming with numerous plans, rules, and enrollment deadlines. GetCallAxis connects you with independent, licensed insurance agents who can help clarify your options and guide you through the process.",
     introP2: "Whether you are approaching age 65 or looking to evaluate your current healthcare coverage during an open enrollment period, compare available options with professional guidance at no cost to you.",
     benefits: [
@@ -423,12 +427,12 @@ const subpagesData = {
       { title: "Part D prescription drug coverage", desc: "Review stand-alone prescription drug plans to help manage your routine medication costs and pharmacy networks." },
       { title: "Guidance during enrollment periods", desc: "Receive personalized support during Initial Enrollment, the Annual Election Period (AEP), or Special Enrollment Periods." }
     ],
-    relatedTitle: "Related Home Services",
+    relatedTitle: "Other insurance you might need",
     related: [
-      { name: "Roofing", url: "roofing.html", desc: "Roof repair, replacement & storm damage restoration." },
-      { name: "HVAC", url: "hvac.html", desc: "Heating & air conditioning repair, heat pumps & AC install." },
-      { name: "Plumbing", url: "plumbing.html", desc: "Water heater repair, drain cleaning & emergency leaks." },
-      { name: "Electrical", url: "electrical.html", desc: "Panel upgrades, EV chargers & generator hookups." }
+      { name: "Health Insurance", url: "health-insurance.html", desc: "ACA marketplace, private plans & subsidy assistance." },
+      { name: "Life Insurance", url: "life-insurance.html", desc: "Term life, whole life & no-medical-exam policies." },
+      { name: "Auto Insurance", url: "auto-insurance.html", desc: "Liability, collision, comprehensive & safe driver discounts." },
+      { name: "Home Insurance", url: "home-insurance.html", desc: "Homeowners, renters, condo & storm damage coverage." }
     ],
     formOptions: ["Medicare Advantage (Part C)", "Medicare Supplement (Medigap)", "Prescription Drug Plan (Part D)", "General Medicare Guidance"]
   },
@@ -453,9 +457,10 @@ const subpagesData = {
       { name: "Auto Insurance", url: "auto-insurance.html", desc: "Liability, collision, comprehensive & safe driver discounts." },
       { name: "Health Insurance", url: "health-insurance.html", desc: "ACA marketplace, private plans & subsidy assistance." },
       { name: "Home Insurance", url: "home-insurance.html", desc: "Homeowners, renters, condo & storm damage coverage." },
-      { name: "Life Insurance", url: "life-insurance.html", desc: "Term life, whole life & no-medical-exam policies." }
+      { name: "Life Insurance", url: "life-insurance.html", desc: "Term life, whole life & no-medical-exam policies." },
+      { name: "Medicare Insurance", url: "medicare-insurance.html", desc: "Medicare Advantage, Medigap & Part D options." }
     ],
-    formOptions: ["Auto Insurance", "Health Insurance", "Home Insurance", "Life Insurance"]
+    formOptions: ["Auto Insurance", "Health Insurance", "Home Insurance", "Life Insurance", "Medicare Insurance"]
   },
   "home-services.html": {
     isOverview: true,
@@ -463,7 +468,7 @@ const subpagesData = {
     title: "Home Services Referral Network | GetCallAxis",
     heroTitle: "Home Services Referral Network",
     categoryPill: "HOME SERVICES OVERVIEW",
-    heroSub: "Connect with background-checked local contractors for roofing, remodeling, HVAC, plumbing, solar, Medicare, and emergency home repairs.",
+    heroSub: "Connect with background-checked local contractors for roofing, remodeling, HVAC, plumbing, solar, and emergency home repairs.",
     howItWorksTitle: "Verified Local Service Professionals",
     introP1: "GetCallAxis makes finding trusted home service contractors fast and stress-free. We connect you with top-rated local specialists across home improvement trades and essential services.",
     introP2: "Select your service below or request a free quote to get matched with verified pros in your zip code.",
@@ -479,10 +484,9 @@ const subpagesData = {
       { name: "HVAC", url: "hvac.html", desc: "Heating & air conditioning repair, heat pumps & AC install." },
       { name: "Bathroom Remodel", url: "bathroom-remodel.html", desc: "Tub-to-shower conversions & full bath renovations." },
       { name: "Plumbing", url: "plumbing.html", desc: "Water heater repair, drain cleaning & emergency leaks." },
-      { name: "Electrical", url: "electrical.html", desc: "Panel upgrades, EV chargers & generator hookups." },
-      { name: "Medicare", url: "medicare-insurance.html", desc: "Compare Medicare Advantage, Supplement & Part D options." }
+      { name: "Electrical", url: "electrical.html", desc: "Panel upgrades, EV chargers & generator hookups." }
     ],
-    formOptions: ["Roofing", "HVAC / Air Conditioning", "Bathroom Remodel", "Plumbing", "Electrical", "Solar Energy", "Medicare"]
+    formOptions: ["Roofing", "HVAC / Air Conditioning", "Bathroom Remodel", "Plumbing", "Electrical", "Solar Energy"]
   }
 };
 
