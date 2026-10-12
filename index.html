@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallAxis | Connect with Local Insurance Agents & Home Service Contractors</title>
+  <meta name="description" content="CallAxis connects US consumers with trusted, pre-screened local insurance agents and licensed home service contractors. Free, fast, 100% no-obligation matching.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Critical Session Loader Guard & Inline Styles -->
+  <script>
+    (function() {
+      try {
+        if (sessionStorage.getItem('callaxis_session_seen')) {
+          document.documentElement.classList.add('callaxis-hide-loader');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    /* Critical Loader CSS — Fixed Navy, Immediately Visible on First Load */
+    html.callaxis-hide-loader #site-loader {
+      display: none !important;
+    }
+    #site-loader {
+      position: fixed !important;
+      inset: 0 !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      z-index: 99999 !important;
+      background: #09131D !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+      overflow: hidden !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #site-loader-canvas {
+      position: absolute;
+      inset: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .site-loader-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+    }
+    .site-loader-wordmark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: siteLoaderReveal 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .site-loader-logo-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+    .site-loader-title {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: #FFFFFF !important;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .site-loader-accent {
+      color: #2DD4BF !important;
+    }
+    .site-loader-progress-track {
+      width: 210px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.14);
+      border-radius: 99px;
+      overflow: hidden;
+      position: relative;
+    }
+    .site-loader-progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(90deg, #0D9488, #2DD4BF);
+      border-radius: 99px;
+      animation: siteLoaderProgress 1.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    }
+    @keyframes siteLoaderReveal {
+      0% { opacity: 0; transform: translateY(16px) scale(0.96); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes siteLoaderProgress {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0%); }
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CallAxis",
+    "url": "https://callaxis.com",
+    "description": "Connecting US consumers with verified local insurance agents and home service professionals.",
+    "telephone": "+1 (555) 010-0123",
+    "areaServed": "US",
+    "serviceType": ["Insurance Referral", "Home Contractor Referral"]
+  }
+  </script>
+  <!-- Apply saved theme before first paint to prevent flash -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('callaxis_theme');
+        if (savedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else if (savedTheme === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ================= Full-Screen Session Loader ================= -->
+  <div id="site-loader" aria-hidden="true">
+    <canvas id="site-loader-canvas"></canvas>
+    <div class="site-loader-content">
+      <div class="site-loader-wordmark">
+        <img src="logo.jpg" alt="CallAxis Logo" class="site-loader-logo-img">
+        <span class="site-loader-title">Call<span class="site-loader-accent">Axis</span></span>
+      </div>
+      <div class="site-loader-progress-track">
+        <div class="site-loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var loader = document.getElementById('site-loader');
+      if (!loader) return;
+      try {
+        if (sessionStorage.getItem('callaxis_session_seen')) {
+          loader.style.display = 'none';
+          if (loader.parentNode) loader.parentNode.removeChild(loader);
+          return;
+        }
+      } catch (e) {}
+
+      // Self-contained animated node and particle background
+      var canvas = document.getElementById('site-loader-canvas');
+      var animId;
+      if (canvas && canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        var w = canvas.width = window.innerWidth;
+        var h = canvas.height = window.innerHeight;
+        var particles = [];
+        var count = Math.min(Math.max(Math.floor((w * h) / 16000), 24), 60);
+        for (var i = 0; i < count; i++) {
+          particles.push({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            vx: (Math.random() - 0.5) * 0.45,
+            vy: (Math.random() - 0.5) * 0.45,
+            r: Math.random() * 2 + 1.2
+          });
+        }
+        function renderParticles() {
+          if (!loader || loader.style.display === 'none') return;
+          ctx.clearRect(0, 0, w, h);
+          for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 0) p.x = w;
+            if (p.x > w) p.x = 0;
+            if (p.y < 0) p.y = h;
+            if (p.y > h) p.y = 0;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(45, 212, 191, 0.65)';
+            ctx.fill();
+            for (var j = i + 1; j < particles.length; j++) {
+              var p2 = particles[j];
+              var dx = p.x - p2.x;
+              var dy = p.y - p2.y;
+              var dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 115) {
+                ctx.beginPath();
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.strokeStyle = 'rgba(45, 212, 191, ' + (0.24 * (1 - dist / 115)) + ')';
+                ctx.lineWidth = 0.8;
+                ctx.stroke();
+              }
+            }
+          }
+          animId = requestAnimationFrame(renderParticles);
+        }
+        renderParticles();
+      }
+
+      // Plain timeout fallback: stays for ~2 seconds, then fades out and is removed
+      setTimeout(function() {
+        try {
+          // Set sessionStorage flag AFTER the loader has been displayed
+          sessionStorage.setItem('callaxis_session_seen', 'true');
+        } catch (e) {}
+        loader.style.opacity = '0';
+        loader.style.pointerEvents = 'none';
+        setTimeout(function() {
+          if (animId) cancelAnimationFrame(animId);
+          if (loader.parentNode) loader.parentNode.removeChild(loader);
+        }, 650);
+      }, 2000);
+    })();
+  </script>
+
+  <!-- Top Announcement / Contact Ticker Bar -->
+  <div class="top-ticker-bar" role="region" aria-label="Announcement ticker">
+    <div class="ticker-track">
+      <div class="ticker-group">
+        <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🇺🇸 Serving All 50 U.S. States</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🛡️ Licensed & Verified Providers Only</span>
+        <span class="ticker-sep">•</span>
+      </div>
+      <div class="ticker-group" aria-hidden="true">
+        <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🇺🇸 Serving All 50 U.S. States</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🛡️ Licensed & Verified Providers Only</span>
+        <span class="ticker-sep">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Clean Corporate Sticky Header ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="CallAxis Homepage">
+        <img src="logo.jpg" alt="CallAxis Logo" class="brand-logo-img">
+        <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu with Connected Sliding Line Indicator -->
+      <div class="nav-links-wrap">
+        <div class="nav-indicator" id="nav-indicator"></div>
+        <nav class="nav-links" id="nav-menu" aria-label="Main Navigation">
+          <!-- Insurance Dropdown -->
+          <div class="nav-dropdown">
+            <a href="insurance.html" class="dropdown-trigger">
+              Insurance
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu insurance-menu" role="menu">
+              <div class="menu-grid single-col-grid">
+                <a href="insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">All Insurance</span></a>
+                <a href="auto-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Auto Insurance</span></a>
+                <a href="health-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Health Insurance</span></a>
+                <a href="home-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Home Insurance</span></a>
+                <a href="life-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Life Insurance</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Home Services Dropdown -->
+          <div class="nav-dropdown">
+            <a href="home-services.html" class="dropdown-trigger">
+              Home Services
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu mega-menu" role="menu">
+              <div class="menu-grid">
+                <a href="roofing.html" class="dropdown-item" role="menuitem"><span class="item-title">Roofing</span></a>
+                <a href="bathroom-remodel.html" class="dropdown-item" role="menuitem"><span class="item-title">Bathroom Remodel</span></a>
+                <a href="flooring.html" class="dropdown-item" role="menuitem"><span class="item-title">Flooring</span></a>
+                <a href="hvac.html" class="dropdown-item" role="menuitem"><span class="item-title">HVAC</span></a>
+                <a href="windows.html" class="dropdown-item" role="menuitem"><span class="item-title">Windows</span></a>
+                <a href="gutters.html" class="dropdown-item" role="menuitem"><span class="item-title">Gutters</span></a>
+                <a href="siding.html" class="dropdown-item" role="menuitem"><span class="item-title">Siding</span></a>
+                <a href="kitchen-remodel.html" class="dropdown-item" role="menuitem"><span class="item-title">Kitchen Remodel</span></a>
+                <a href="plumbing.html" class="dropdown-item" role="menuitem"><span class="item-title">Plumbing</span></a>
+                <a href="electrical.html" class="dropdown-item" role="menuitem"><span class="item-title">Electrical</span></a>
+                <a href="solar.html" class="dropdown-item" role="menuitem"><span class="item-title">Solar</span></a>
+                <a href="garage-doors.html" class="dropdown-item" role="menuitem"><span class="item-title">Garage Doors</span></a>
+                <a href="foundations.html" class="dropdown-item" role="menuitem"><span class="item-title">Foundations &amp; Waterproofing</span></a>
+                <a href="medicare-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Medicare</span></a>
+                <a href="home-services.html" class="dropdown-item view-all-item" role="menuitem"><span class="item-title">View All &rarr;</span></a>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Header CTAs & Light/Dark Theme Switcher -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <a href="tel:+15550100123" class="phone-link" aria-label="Call CallAxis Directly">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span class="phone-number">+1 (555) 010-0123</span>
+        </a>
+
+        <a href="#hero" class="btn btn-teal nav-quote-btn">Get a Free Quote</a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= Hero Section with Interactive Node Canvas ================= -->
+  <section class="hero-section" id="hero">
+    <canvas id="hero-node-canvas" class="node-canvas"></canvas>
+
+    <div class="container hero-grid">
+      
+      <!-- Left Column: Staggered Headline & Value Proposition -->
+      <div class="hero-content">
+        <div class="trust-pill">
+          <span class="badge-dot"></span>
+          <span>Fast, Free & Trusted Local Referral Network</span>
+        </div>
+        
+        <h1 class="hero-headline" id="hero-headline">
+          <span class="hero-word w-1">Get</span>
+          <span class="hero-word w-2">connected</span>
+          <span class="hero-word w-3">to</span>
+          <span class="hero-word w-4">the</span>
+          <span class="hero-word w-5">right</span>
+          <span class="hero-word w-6 highlight-text"><span class="animated-gradient-text">insurance</span></span>
+          <span class="hero-word w-7">or</span>
+          <span class="hero-word w-8 highlight-text"><span class="animated-gradient-text">home service</span></span>
+          <span class="hero-word w-9">provider,</span>
+          <span class="hero-word w-10">fast.</span>
+        </h1>
+        
+        <p class="hero-subheading" id="hero-subheading">
+          CallAxis bridges US homeowners and policy seekers with verified insurance specialists and pre-screened home service professionals in your area. Zero obligation, zero cost.
+        </p>
+
+        <div class="hero-btn-row" style="display:flex; gap:12px; margin-bottom:24px; flex-wrap:wrap;">
+          <a href="tel:+15550100123" class="btn btn-accent btn-lg">Call Now: +1 (555) 010-0123</a>
+          <a href="#hero" class="btn btn-ghost btn-lg">Get a Free Quote &rarr;</a>
+        </div>
+
+        <!-- Trust Badges Bar -->
+        <div class="trust-badges-grid">
+          <div class="trust-badge-item">
+            <div class="badge-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="badge-text">
+              <strong>100% Free</strong>
+              <span>No Obligation</span>
+            </div>
+          </div>
+
+          <div class="trust-badge-item">
+            <div class="badge-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <div class="badge-text">
+              <strong>TCPA Compliant</strong>
+              <span>Data Protected</span>
+            </div>
+          </div>
+
+          <div class="trust-badge-item">
+            <div class="badge-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div class="badge-text">
+              <strong>Verified Providers</strong>
+              <span>Local Screened Pros</span>
+            </div>
+          </div>
+
+          <div class="trust-badge-item">
+            <div class="badge-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <div class="badge-text">
+              <strong>Licensed Agents</strong>
+              <span>State Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Clean Multi-Step Quote Card -->
+      <div class="hero-form-wrapper">
+        <div class="form-card clean-white-card" data-tilt>
+          
+          <div class="form-header">
+            <h2 class="form-title" id="form-header-title">Request Your Free Quote</h2>
+            <p class="form-subtitle" id="form-header-subtitle">Select your category & zip code to find local pros</p>
+            
+            <div class="step-progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" id="step-progress-bar">
+              <div class="step-progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="step-indicators">
+              <span class="step-dot active" id="dot-1">1</span>
+              <span class="step-dot" id="dot-2">2</span>
+              <span class="step-dot" id="dot-3">3</span>
+            </div>
+          </div>
+
+          <form id="quote-form" class="quote-form" novalidate>
+            <!-- STEP 1 -->
+            <div class="form-step step-active" id="step-1">
+              <label class="form-label">1. Choose What You Need</label>
+              <div class="category-switch-grid">
+                <label class="category-radio-card active" id="cat-card-insurance">
+                  <input type="radio" name="main_category" value="insurance" checked>
+                  <div class="radio-content">
+                    <span class="radio-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </span>
+                    <span class="radio-title">Insurance</span>
+                    <span class="radio-sub">Auto, Health, Home, Life</span>
+                  </div>
+                </label>
+                
+                <label class="category-radio-card" id="cat-card-homeservices">
+                  <input type="radio" name="main_category" value="home_services">
+                  <div class="radio-content">
+                    <span class="radio-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </span>
+                    <span class="radio-title">Home Services</span>
+                    <span class="radio-sub">Roofing, HVAC, Medicare, Remodels</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="input-group margin-top-md">
+                <label for="zip_code" class="form-label">2. Enter US Zip Code</label>
+                <div class="input-with-icon">
+                  <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <input type="text" id="zip_code" name="zip_code" class="form-input" placeholder="e.g. 90210" maxlength="5" pattern="[0-9]{5}" required>
+                </div>
+                <span class="error-msg" id="zip-error">Please enter a valid 5-digit US zip code.</span>
+              </div>
+
+              <button type="button" class="btn btn-teal btn-full margin-top-lg" id="btn-to-step2">
+                Continue to Specific Service &rarr;
+              </button>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="form-step" id="step-2">
+              <div class="input-group">
+                <label for="specific_service" class="form-label">Select Specific Service</label>
+                  <select id="specific_service" name="specific_service" class="form-select grouped-service-select" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <optgroup label="Insurance">
+                      <option value="auto">Auto Insurance</option>
+                      <option value="health">Health Insurance</option>
+                      <option value="home">Home Insurance</option>
+                      <option value="life">Life Insurance</option>
+                    </optgroup>
+                    <optgroup label="Home Services">
+                      <option value="roofing">Roofing</option>
+                      <option value="bathroom">Bathroom Remodel</option>
+                      <option value="flooring">Flooring</option>
+                      <option value="hvac">HVAC</option>
+                      <option value="windows">Windows</option>
+                      <option value="gutters">Gutters</option>
+                      <option value="siding">Siding</option>
+                      <option value="kitchen">Kitchen Remodel</option>
+                      <option value="plumbing">Plumbing</option>
+                      <option value="electrical">Electrical</option>
+                      <option value="solar">Solar</option>
+                      <option value="garage">Garage Doors</option>
+                      <option value="foundation">Foundations & Waterproofing</option>
+                      <option value="medicare">Medicare</option>
+                    </optgroup>
+                  </select>
+              </div>
+
+              <div class="input-group margin-top-md">
+                <label class="form-label">Project Timeline</label>
+                <div class="timeline-grid">
+                  <label class="timeline-pill active">
+                    <input type="radio" name="timeline" value="ASAP" checked>
+                    <span>ASAP / Immediately</span>
+                  </label>
+                  <label class="timeline-pill">
+                    <input type="radio" name="timeline" value="Within 1 Month">
+                    <span>Within 1 Month</span>
+                  </label>
+                  <label class="timeline-pill">
+                    <input type="radio" name="timeline" value="1-3 Months">
+                    <span>1 to 3 Months</span>
+                  </label>
+                  <label class="timeline-pill">
+                    <input type="radio" name="timeline" value="Researching">
+                    <span>Just Researching</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="step-nav-buttons margin-top-lg">
+                <button type="button" class="btn btn-outline" id="btn-back-to-step1">&larr; Back</button>
+                <button type="button" class="btn btn-teal" id="btn-to-step3">Next: Your Contact Info &rarr;</button>
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="form-step" id="step-3">
+              <div class="input-group">
+                <label for="full_name" class="form-label">Full Name</label>
+                <input type="text" id="full_name" name="full_name" class="form-input" placeholder="Jane Smith" required>
+                <span class="error-msg" id="name-error">Please enter your full name.</span>
+              </div>
+
+              <div class="input-group margin-top-sm">
+                <label for="phone_number" class="form-label">Phone Number</label>
+                <input type="tel" id="phone_number" name="phone_number" class="form-input" placeholder="(555) 000-0000" required>
+                <span class="error-msg" id="phone-error">Please enter a valid 10-digit phone number.</span>
+              </div>
+
+              <div class="input-group margin-top-sm">
+                <label for="email_address" class="form-label">Email Address</label>
+                <input type="email" id="email_address" name="email_address" class="form-input" placeholder="jane@example.com" required>
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="tcpa-consent-box margin-top-sm">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="tcpa_consent" name="tcpa_consent" checked required>
+                  <span class="checkbox-text">
+                    By clicking "Get My Free Quote", I authorize CallAxis and its network of verified local insurance agents or home service professionals to contact me at the phone number provided above. Consent is not required as a condition of purchase.
+                  </span>
+                </label>
+              </div>
+
+              <div class="step-nav-buttons margin-top-md">
+                <button type="button" class="btn btn-outline" id="btn-back-to-step2">&larr; Back</button>
+                <button type="submit" class="btn btn-teal btn-full" id="btn-submit">
+                  Get My Free Quote
+                </button>
+              </div>
+            </div>
+
+            <!-- CONFIRMATION -->
+            <div class="form-step" id="step-confirmation">
+              <div class="confirmation-box">
+                <div class="success-icon-wrap">
+                  <svg class="success-check" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                </div>
+                
+                <h3 class="conf-title">Quote Request Received!</h3>
+                <p class="conf-desc">
+                  Thank you, <strong id="conf-name-display">Friend</strong>. We are matching your request with pre-screened professionals in zip code <strong id="conf-zip-display">90210</strong>.
+                </p>
+
+                <div class="match-summary-card">
+                  <div class="summary-row">
+                    <span>Reference ID:</span>
+                    <strong id="conf-ref-id">AXIS-94820</strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>Requested Service:</span>
+                    <strong id="conf-service-display">Roofing Replacement</strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>Estimated Response:</span>
+                    <span class="badge-fast">⚡ Under 5 Minutes</span>
+                  </div>
+                </div>
+
+                <button type="button" class="btn btn-outline margin-top-md" id="btn-reset-form">
+                  Submit Another Quote Request
+                </button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= Service Marquee Ticker Strip ================= -->
+  <div class="services-ticker-strip" aria-label="Supported Services Ticker">
+    <div class="ticker-track">
+      <!-- Group 1 -->
+      <div class="ticker-group">
+        <span class="ticker-item">Auto Insurance</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Health Insurance</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Home Insurance</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Life Insurance</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Roofing</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Bathroom Remodel</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Flooring</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">HVAC</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Windows</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Gutters</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Siding</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Kitchen Remodel</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Plumbing</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Electrical</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Solar</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Garage Doors</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Foundations &amp; Waterproofing</span><span class="ticker-sep">•</span>
+      </div>
+      <!-- Group 2 (Duplicate for seamless loop) -->
+      <div class="ticker-group" aria-hidden="true">
+        <span class="ticker-item">Auto Insurance</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Health Insurance</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Home Insurance</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Life Insurance</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Roofing</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Bathroom Remodel</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Flooring</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">HVAC</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Windows</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Gutters</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Siding</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Kitchen Remodel</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Plumbing</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Electrical</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Solar</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Garage Doors</span><span class="ticker-sep">•</span>
+        <span class="ticker-item">Foundations &amp; Waterproofing</span><span class="ticker-sep">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= How It Works Section ================= -->
+  <section class="section how-it-works-sec" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title-badge">SIMPLE PROCESS</span>
+        <h2 class="section-title reveal-heading">Get connected in three easy steps</h2>
+        <p class="section-subtitle">We streamline finding reputable local insurance specialists and home contractors.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card tint-mint card-hover hue-teal" tabindex="0" data-tilt>
+          <div class="step-badge">1</div>
+          <div class="step-icon-box">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Tell Us What You Need</h3>
+          <p class="step-desc">Select your desired service—from Auto or Health insurance to Roofing, HVAC, or Remodeling—and enter your zip code.</p>
+        </div>
+
+        <div class="step-card tint-blue highlight-step card-hover hue-blue" tabindex="0" data-tilt>
+          <div class="step-badge">2</div>
+          <div class="step-icon-box">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Instant Local Match</h3>
+          <p class="step-desc">Our intelligent routing system connects your request with active, verified local agents or contractors in your neighborhood.</p>
+        </div>
+
+        <div class="step-card tint-amber card-hover hue-amber" tabindex="0" data-tilt>
+          <div class="step-badge">3</div>
+          <div class="step-icon-box">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Get Connected & Save</h3>
+          <p class="step-desc">Receive competitive price quotes with zero obligation. Choose the provider that best fits your needs and budget.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Services Overview Section ================= -->
+  <section class="section services-sec" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title-badge">OUR SERVICES</span>
+        <h2 class="section-title reveal-heading">Insurance &amp; home services, all in one place</h2>
+        <p class="section-subtitle">Find trusted local providers for insurance coverage and home improvement.</p>
+      </div>
+
+      <div class="services-two-col">
+        <!-- Card 1: Insurance -->
+        <div class="service-overview-card card-insurance" tabindex="0" data-animate="fade-up">
+          <div class="overview-card-header">
+            <div class="overview-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="overview-title-block">
+              <h3 class="overview-card-title">
+                <a href="insurance.html">Insurance</a>
+              </h3>
+              <p class="overview-card-subtitle">Auto, Health, Home &amp; Life</p>
+            </div>
+          </div>
+          <p class="overview-card-desc">
+            Compare personalized policy quotes from top licensed carriers. Find comprehensive protection plans tailored to your budget and coverage needs.
+          </p>
+          <div class="overview-tags">
+            <span class="tag-pill">Auto</span>
+            <span class="tag-pill">Health</span>
+            <span class="tag-pill">Home</span>
+            <span class="tag-pill">Life</span>
+          </div>
+          <div class="overview-btn-row">
+            <a href="tel:+15550100123" class="btn-pill-outline">Call Now</a>
+            <a href="insurance.html" class="btn btn-teal">Get a Quote &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Home Services -->
+        <div class="service-overview-card card-homeservices" tabindex="0" data-animate="fade-up">
+          <div class="overview-card-header">
+            <div class="overview-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div class="overview-title-block">
+              <h3 class="overview-card-title">
+                <a href="home-services.html">Home Services</a>
+              </h3>
+              <p class="overview-card-subtitle">Licensed &amp; Verified Local Contractors</p>
+            </div>
+          </div>
+          <p class="overview-card-desc">
+            Connect with pre-screened local contractors for roofing, HVAC, remodeling, solar, plumbing, electrical, and major home repair projects.
+          </p>
+          <div class="overview-tags">
+            <span class="tag-pill">Roofing</span>
+            <span class="tag-pill">HVAC</span>
+            <span class="tag-pill">Remodel</span>
+            <span class="tag-pill">Solar</span>
+            <span class="tag-pill">Medicare</span>
+            <span class="tag-pill">+more</span>
+          </div>
+          <div class="overview-btn-row">
+            <a href="tel:+15550100123" class="btn-pill-outline">Call Now</a>
+            <a href="home-services.html" class="btn btn-teal">Find a Contractor &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Stats Bar (Full-Width Dark Band) ================= -->
+  <section class="stats-bar-sec" id="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">
+            <span class="stat-val" data-count="250000" data-suffix="+">250,000</span><span class="stat-accent">+</span>
+          </div>
+          <div class="stat-label">Consumers Connected</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number">
+            <span class="stat-val" data-count="50" data-suffix="">50</span>
+          </div>
+          <div class="stat-label">States Covered</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number">
+            <span class="stat-val" data-count="17" data-suffix="+">17</span><span class="stat-accent">+</span>
+          </div>
+          <div class="stat-label">Service Categories</div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number">
+            <span class="stat-val" data-count="24" data-suffix="/7">24</span><span class="stat-accent">/7</span>
+          </div>
+          <div class="stat-label">Support Availability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Why Choose Us Section ================= -->
+  <section class="section why-us-sec" id="why-us">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-title-badge" data-animate="fade-up">WHY CALLAXIS</span>
+        <h2 class="section-title reveal-heading" data-animate="fade-up">The smarter way to find local providers</h2>
+        <p class="section-subtitle" data-animate="fade-up">We simplify comparing quotes from certified professionals in your local area.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card tint-mint card-hover hue-teal" tabindex="0" data-animate="fade-up">
+          <div class="why-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Always free</h3>
+          <p class="why-desc">Our matching service is 100% free for consumers with no hidden charges or fees ever.</p>
+        </div>
+
+        <div class="why-card tint-blue card-hover hue-blue" tabindex="0" data-animate="fade-up">
+          <div class="why-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Verified providers</h3>
+          <p class="why-desc">We only partner with pre-screened, licensed, and state-certified local specialists.</p>
+        </div>
+
+        <div class="why-card tint-amber card-hover hue-amber" tabindex="0" data-animate="fade-up">
+          <div class="why-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Fast response</h3>
+          <p class="why-desc">Get connected in minutes so you can compare top rate options without delay.</p>
+        </div>
+
+        <div class="why-card tint-pink card-hover hue-rose" tabindex="0" data-animate="fade-up">
+          <div class="why-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Local providers</h3>
+          <p class="why-desc">Connect directly with trusted professionals who operate right in your zip code.</p>
+        </div>
+
+        <div class="why-card tint-lavender card-hover hue-violet" tabindex="0" data-animate="fade-up">
+          <div class="why-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+            </svg>
+          </div>
+          <h3 class="why-title">No obligation</h3>
+          <p class="why-desc">Compare free estimates with zero pressure. Review options and decide on your terms.</p>
+        </div>
+
+        <div class="why-card tint-cyan card-hover hue-cyan" tabindex="0" data-animate="fade-up">
+          <div class="why-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3 class="why-title">TCPA compliant</h3>
+          <p class="why-desc">Your personal data is encrypted and managed according to strict privacy standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Single Closing CTA Section ================= -->
+  <section class="final-cta-sec" id="contact-sec">
+    <div class="container">
+      <div class="cta-banner-card" data-animate="fade-up">
+        <div class="cta-content">
+          <h2 class="cta-headline reveal-heading" data-animate="fade-up">Ready to get connected?</h2>
+          <p class="cta-subtitle" data-animate="fade-up">Call us now for an instant connection, or fill out the quick form on our homepage. Free, fast, and no obligation.</p>
+          
+          <div class="cta-btn-group" data-animate="fade-up">
+            <a href="tel:+15550100123" class="btn btn-teal btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              Call Now: +1 (555) 010-0123
+            </a>
+            <a href="#hero" class="btn btn-outline-white btn-lg">
+              Get a Free Quote &uarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" style="margin-bottom:16px; display:inline-flex; align-items:center; gap:8px; text-decoration:none;">
+          <img src="logo.jpg" alt="CallAxis Logo" style="width:32px;height:32px;border-radius:6px;object-fit:cover;">
+          <span class="logo-text"><span class="footer-brand-call">Call</span><span class="footer-brand-axis">Axis</span></span>
+        </a>
+        <p class="footer-desc">Connecting US consumers with trusted insurance agents and home service contractors — free, fast, and no obligation.</p>
+        
+        <div class="footer-contact">
+          <div class="footer-contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+15550100123" class="footer-link" style="color:inherit;text-decoration:none;">+1 (555) 010-0123</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>1234 Business Park Drive, Suite 100, Dover, DE 19901</span>
+          </div>
+          <div class="footer-contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:arsalanmanunited@gmail.com" class="footer-link" style="color:inherit;text-decoration:none;">arsalanmanunited@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">INSURANCE</h4>
+        <ul class="footer-list">
+          <li><a href="auto-insurance.html" class="footer-link">Auto Insurance</a></li>
+          <li><a href="health-insurance.html" class="footer-link">Health Insurance</a></li>
+          <li><a href="home-insurance.html" class="footer-link">Home Insurance</a></li>
+          <li><a href="life-insurance.html" class="footer-link">Life Insurance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">HOME SERVICES</h4>
+        <ul class="footer-list">
+          <li><a href="roofing.html" class="footer-link">Roofing</a></li>
+          <li><a href="bathroom-remodel.html" class="footer-link">Bathroom Remodel</a></li>
+          <li><a href="hvac.html" class="footer-link">HVAC</a></li>
+          <li><a href="solar.html" class="footer-link">Solar</a></li>
+          <li><a href="medicare-insurance.html" class="footer-link">Medicare</a></li>
+          <li><a href="home-services.html" class="footer-link">View all &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">COMPANY</h4>
+        <ul class="footer-list">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+          <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 CallAxis. All rights reserved.</span>
+      <span><a href="privacy-policy.html" class="footer-link">Privacy Policy</a> · <a href="terms.html" class="footer-link">Terms of Service</a></span>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-overlay" id="privacy-modal" aria-hidden="true" role="dialog" aria-labelledby="privacy-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="privacy-title">CallAxis Privacy Policy</h3>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Effective Date: January 1, 2026</strong></p>
+        <p>At CallAxis, we respect your privacy. Submitted data is used exclusively to connect you with verified local insurance agents or home contractors operating in your geographical area.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-teal modal-close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="terms-modal" aria-hidden="true" role="dialog" aria-labelledby="terms-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="terms-title">CallAxis Terms of Service</h3>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Effective Date: January 1, 2026</strong></p>
+        <p>CallAxis acts solely as a matching referral directory between consumers and independent third-party service providers.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-teal modal-close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

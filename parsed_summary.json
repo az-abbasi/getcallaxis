@@ -1,0 +1,424 @@
+{
+  "insurance.html": {
+    "title": "Insurance",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "Get connected with a provider",
+    "benefits": []
+  },
+  "insurance-auto.html": {
+    "title": "Auto Insurance",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for auto insurance",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Liability, collision & comprehensive options"
+      },
+      {
+        "title": "",
+        "desc": "Discounts for safe drivers & bundling"
+      },
+      {
+        "title": "",
+        "desc": "Coverage for new, used & leased vehicles"
+      },
+      {
+        "title": "",
+        "desc": "State-minimum to full-coverage plans"
+      }
+    ]
+  },
+  "insurance-health.html": {
+    "title": "Health Insurance",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for health insurance",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "ACA marketplace & private plan options"
+      },
+      {
+        "title": "",
+        "desc": "Guidance on subsidies & tax credits"
+      },
+      {
+        "title": "",
+        "desc": "Individual, family & short-term plans"
+      },
+      {
+        "title": "",
+        "desc": "Licensed agents in every state"
+      }
+    ]
+  },
+  "insurance-home.html": {
+    "title": "Home Insurance",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for home insurance",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Dwelling, liability & personal property cover"
+      },
+      {
+        "title": "",
+        "desc": "Bundle discounts with auto or umbrella policies"
+      },
+      {
+        "title": "",
+        "desc": "Coverage for storms, fire & theft"
+      },
+      {
+        "title": "",
+        "desc": "Renters & condo insurance also available"
+      }
+    ]
+  },
+  "insurance-life.html": {
+    "title": "Life Insurance",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for life insurance",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Term & whole life policy options"
+      },
+      {
+        "title": "",
+        "desc": "No-medical-exam options for eligible applicants"
+      },
+      {
+        "title": "",
+        "desc": "Coverage amounts from $50K to $2M+"
+      },
+      {
+        "title": "",
+        "desc": "Free needs-based coverage estimate"
+      }
+    ]
+  },
+  "home-services.html": {
+    "title": "Home Services",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "Get connected with a provider",
+    "benefits": []
+  },
+  "home-services-roofing.html": {
+    "title": "Roofing",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for roofing",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Asphalt, metal & tile roofing options"
+      },
+      {
+        "title": "",
+        "desc": "Storm & insurance-claim specialists"
+      },
+      {
+        "title": "",
+        "desc": "Free on-site inspections"
+      },
+      {
+        "title": "",
+        "desc": "Licensed & insured local crews"
+      }
+    ]
+  },
+  "home-services-bathroom.html": {
+    "title": "Bathroom Remodel",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for bathroom remodel",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Tub-to-shower conversions"
+      },
+      {
+        "title": "",
+        "desc": "Full bathroom rebuilds & layout changes"
+      },
+      {
+        "title": "",
+        "desc": "Accessibility & walk-in tub options"
+      },
+      {
+        "title": "",
+        "desc": "Fixed-quote & financing options available"
+      }
+    ]
+  },
+  "home-services-flooring.html": {
+    "title": "Flooring",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for flooring",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Hardwood, tile, vinyl & laminate"
+      },
+      {
+        "title": "",
+        "desc": "Refinishing & repair services"
+      },
+      {
+        "title": "",
+        "desc": "Room-by-room or whole-home quotes"
+      },
+      {
+        "title": "",
+        "desc": "Pet- and family-friendly material options"
+      }
+    ]
+  },
+  "home-services-hvac.html": {
+    "title": "HVAC",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for hvac",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Furnace, AC & heat pump service"
+      },
+      {
+        "title": "",
+        "desc": "Emergency repair availability"
+      },
+      {
+        "title": "",
+        "desc": "Energy-efficient system upgrades"
+      },
+      {
+        "title": "",
+        "desc": "Maintenance plans to prevent breakdowns"
+      }
+    ]
+  },
+  "home-services-windows.html": {
+    "title": "Windows",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for windows",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Double & triple-pane options"
+      },
+      {
+        "title": "",
+        "desc": "Vinyl, wood & fiberglass frames"
+      },
+      {
+        "title": "",
+        "desc": "Energy-efficiency rebate guidance"
+      },
+      {
+        "title": "",
+        "desc": "Full-home or single-room quotes"
+      }
+    ]
+  },
+  "home-services-gutters.html": {
+    "title": "Gutters",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for gutters",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Seamless gutter installation"
+      },
+      {
+        "title": "",
+        "desc": "Gutter guards & leaf protection"
+      },
+      {
+        "title": "",
+        "desc": "Repair & re-pitching services"
+      },
+      {
+        "title": "",
+        "desc": "Downspout & drainage solutions"
+      }
+    ]
+  },
+  "home-services-siding.html": {
+    "title": "Siding",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for siding",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Vinyl, fiber cement & wood siding"
+      },
+      {
+        "title": "",
+        "desc": "Insulated siding for energy savings"
+      },
+      {
+        "title": "",
+        "desc": "Storm damage & repair specialists"
+      },
+      {
+        "title": "",
+        "desc": "Color & style consultation included"
+      }
+    ]
+  },
+  "home-services-kitchen.html": {
+    "title": "Kitchen Remodel",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for kitchen remodel",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Cabinet refacing & full replacement"
+      },
+      {
+        "title": "",
+        "desc": "Countertop & backsplash upgrades"
+      },
+      {
+        "title": "",
+        "desc": "Layout redesign & appliance integration"
+      },
+      {
+        "title": "",
+        "desc": "Financing options for larger projects"
+      }
+    ]
+  },
+  "home-services-plumbing.html": {
+    "title": "Plumbing",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for plumbing",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Emergency & same-day service"
+      },
+      {
+        "title": "",
+        "desc": "Water heater install & repair"
+      },
+      {
+        "title": "",
+        "desc": "Drain cleaning & leak detection"
+      },
+      {
+        "title": "",
+        "desc": "Licensed, insured local plumbers"
+      }
+    ]
+  },
+  "home-services-electrical.html": {
+    "title": "Electrical",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for electrical",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Panel upgrades & rewiring"
+      },
+      {
+        "title": "",
+        "desc": "EV charger & generator installs"
+      },
+      {
+        "title": "",
+        "desc": "Lighting & outlet installation"
+      },
+      {
+        "title": "",
+        "desc": "Licensed electricians, code-compliant work"
+      }
+    ]
+  },
+  "home-services-solar.html": {
+    "title": "Solar",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for solar",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Free solar savings estimate"
+      },
+      {
+        "title": "",
+        "desc": "Panel, battery & inverter options"
+      },
+      {
+        "title": "",
+        "desc": "Federal & state incentive guidance"
+      },
+      {
+        "title": "",
+        "desc": "Local, licensed installation crews"
+      }
+    ]
+  },
+  "home-services-garage-doors.html": {
+    "title": "Garage Doors",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for garage doors",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Same-week repair availability"
+      },
+      {
+        "title": "",
+        "desc": "Insulated & smart garage doors"
+      },
+      {
+        "title": "",
+        "desc": "Opener installation & repair"
+      },
+      {
+        "title": "",
+        "desc": "Free measure & quote"
+      }
+    ]
+  },
+  "home-services-foundations.html": {
+    "title": "Foundations & Waterproofing",
+    "eyebrow": "",
+    "heroSub": "",
+    "mainSectionTitle": "How it works for foundations & waterproofing",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Foundation crack & settlement repair"
+      },
+      {
+        "title": "",
+        "desc": "Basement & crawl space waterproofing"
+      },
+      {
+        "title": "",
+        "desc": "Sump pump installation"
+      },
+      {
+        "title": "",
+        "desc": "Free structural inspection"
+      }
+    ]
+  }
+}

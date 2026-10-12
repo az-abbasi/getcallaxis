@@ -1,0 +1,481 @@
+{
+  "insurance.html": {
+    "heroTitle": "Insurance",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "Get connected with a provider",
+    "introP1": "Fill in your details and a verified local provider will call you shortly.",
+    "introP2": "By submitting, you agree to our Privacy Policy and Terms of Service. A verified provider may call you at the number provided.",
+    "benefits": [],
+    "related": []
+  },
+  "insurance-auto.html": {
+    "heroTitle": "Auto Insurance",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for auto insurance",
+    "introP1": "Compare rates from top-rated carriers and get matched with a licensed agent who can find the right auto policy for your budget and driving history.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Liability, collision & comprehensive options"
+      },
+      {
+        "title": "",
+        "desc": "Discounts for safe drivers & bundling"
+      },
+      {
+        "title": "",
+        "desc": "Coverage for new, used & leased vehicles"
+      },
+      {
+        "title": "",
+        "desc": "State-minimum to full-coverage plans"
+      }
+    ],
+    "related": []
+  },
+  "insurance-health.html": {
+    "heroTitle": "Health Insurance",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for health insurance",
+    "introP1": "Get connected with a licensed health insurance agent who can walk you through marketplace, employer, and private plan options in your state.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "ACA marketplace & private plan options"
+      },
+      {
+        "title": "",
+        "desc": "Guidance on subsidies & tax credits"
+      },
+      {
+        "title": "",
+        "desc": "Individual, family & short-term plans"
+      },
+      {
+        "title": "",
+        "desc": "Licensed agents in every state"
+      }
+    ],
+    "related": []
+  },
+  "insurance-home.html": {
+    "heroTitle": "Home Insurance",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for home insurance",
+    "introP1": "We match you with agents who compare homeowners policies from multiple carriers, so you get solid coverage without overpaying.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Dwelling, liability & personal property cover"
+      },
+      {
+        "title": "",
+        "desc": "Bundle discounts with auto or umbrella policies"
+      },
+      {
+        "title": "",
+        "desc": "Coverage for storms, fire & theft"
+      },
+      {
+        "title": "",
+        "desc": "Renters & condo insurance also available"
+      }
+    ],
+    "related": []
+  },
+  "insurance-life.html": {
+    "heroTitle": "Life Insurance",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for life insurance",
+    "introP1": "Speak with a licensed agent about term or whole life policies sized to your family's needs and budget, with no pressure to buy.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Term & whole life policy options"
+      },
+      {
+        "title": "",
+        "desc": "No-medical-exam options for eligible applicants"
+      },
+      {
+        "title": "",
+        "desc": "Coverage amounts from $50K to $2M+"
+      },
+      {
+        "title": "",
+        "desc": "Free needs-based coverage estimate"
+      }
+    ],
+    "related": []
+  },
+  "home-services.html": {
+    "heroTitle": "Home Services",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "Get connected with a provider",
+    "introP1": "Fill in your details and a verified local provider will call you shortly.",
+    "introP2": "By submitting, you agree to our Privacy Policy and Terms of Service. A verified provider may call you at the number provided.",
+    "benefits": [],
+    "related": []
+  },
+  "home-services-roofing.html": {
+    "heroTitle": "Roofing",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for roofing",
+    "introP1": "Connect with licensed local roofers for repairs, full replacements, or storm damage claims, and get quotes without the cold calls.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Asphalt, metal & tile roofing options"
+      },
+      {
+        "title": "",
+        "desc": "Storm & insurance-claim specialists"
+      },
+      {
+        "title": "",
+        "desc": "Free on-site inspections"
+      },
+      {
+        "title": "",
+        "desc": "Licensed & insured local crews"
+      }
+    ],
+    "related": []
+  },
+  "home-services-bathroom.html": {
+    "heroTitle": "Bathroom Remodel",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for bathroom remodel",
+    "introP1": "Get matched with local remodelers who handle everything from tub-to-shower conversions to complete bathroom rebuilds.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Tub-to-shower conversions"
+      },
+      {
+        "title": "",
+        "desc": "Full bathroom rebuilds & layout changes"
+      },
+      {
+        "title": "",
+        "desc": "Accessibility & walk-in tub options"
+      },
+      {
+        "title": "",
+        "desc": "Fixed-quote & financing options available"
+      }
+    ],
+    "related": []
+  },
+  "home-services-flooring.html": {
+    "heroTitle": "Flooring",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for flooring",
+    "introP1": "Whether you're refinishing hardwood or installing new flooring throughout, we connect you with local flooring specialists.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Hardwood, tile, vinyl & laminate"
+      },
+      {
+        "title": "",
+        "desc": "Refinishing & repair services"
+      },
+      {
+        "title": "",
+        "desc": "Room-by-room or whole-home quotes"
+      },
+      {
+        "title": "",
+        "desc": "Pet- and family-friendly material options"
+      }
+    ],
+    "related": []
+  },
+  "home-services-hvac.html": {
+    "heroTitle": "HVAC",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for hvac",
+    "introP1": "Get connected with local HVAC technicians for emergency repairs, seasonal tune-ups, or full system replacements.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Furnace, AC & heat pump service"
+      },
+      {
+        "title": "",
+        "desc": "Emergency repair availability"
+      },
+      {
+        "title": "",
+        "desc": "Energy-efficient system upgrades"
+      },
+      {
+        "title": "",
+        "desc": "Maintenance plans to prevent breakdowns"
+      }
+    ],
+    "related": []
+  },
+  "home-services-windows.html": {
+    "heroTitle": "Windows",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for windows",
+    "introP1": "Compare quotes from local window installers for energy-efficient replacements that cut drafts and lower utility bills.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Double & triple-pane options"
+      },
+      {
+        "title": "",
+        "desc": "Vinyl, wood & fiberglass frames"
+      },
+      {
+        "title": "",
+        "desc": "Energy-efficiency rebate guidance"
+      },
+      {
+        "title": "",
+        "desc": "Full-home or single-room quotes"
+      }
+    ],
+    "related": []
+  },
+  "home-services-gutters.html": {
+    "heroTitle": "Gutters",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for gutters",
+    "introP1": "Protect your home's foundation with properly installed or repaired gutters from a local, licensed crew.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Seamless gutter installation"
+      },
+      {
+        "title": "",
+        "desc": "Gutter guards & leaf protection"
+      },
+      {
+        "title": "",
+        "desc": "Repair & re-pitching services"
+      },
+      {
+        "title": "",
+        "desc": "Downspout & drainage solutions"
+      }
+    ],
+    "related": []
+  },
+  "home-services-siding.html": {
+    "heroTitle": "Siding",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for siding",
+    "introP1": "Get quotes on vinyl, fiber cement, or wood siding installation from local contractors who serve your area.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Vinyl, fiber cement & wood siding"
+      },
+      {
+        "title": "",
+        "desc": "Insulated siding for energy savings"
+      },
+      {
+        "title": "",
+        "desc": "Storm damage & repair specialists"
+      },
+      {
+        "title": "",
+        "desc": "Color & style consultation included"
+      }
+    ],
+    "related": []
+  },
+  "home-services-kitchen.html": {
+    "heroTitle": "Kitchen Remodel",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for kitchen remodel",
+    "introP1": "Connect with local kitchen remodelers for anything from a countertop swap to a complete kitchen overhaul.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Cabinet refacing & full replacement"
+      },
+      {
+        "title": "",
+        "desc": "Countertop & backsplash upgrades"
+      },
+      {
+        "title": "",
+        "desc": "Layout redesign & appliance integration"
+      },
+      {
+        "title": "",
+        "desc": "Financing options for larger projects"
+      }
+    ],
+    "related": []
+  },
+  "home-services-plumbing.html": {
+    "heroTitle": "Plumbing",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for plumbing",
+    "introP1": "Get matched with licensed local plumbers for everything from a dripping faucet to a full repipe.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Emergency & same-day service"
+      },
+      {
+        "title": "",
+        "desc": "Water heater install & repair"
+      },
+      {
+        "title": "",
+        "desc": "Drain cleaning & leak detection"
+      },
+      {
+        "title": "",
+        "desc": "Licensed, insured local plumbers"
+      }
+    ],
+    "related": []
+  },
+  "home-services-electrical.html": {
+    "heroTitle": "Electrical",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for electrical",
+    "introP1": "Connect with licensed electricians for repairs, panel upgrades, rewiring, or new installations around your home.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Panel upgrades & rewiring"
+      },
+      {
+        "title": "",
+        "desc": "EV charger & generator installs"
+      },
+      {
+        "title": "",
+        "desc": "Lighting & outlet installation"
+      },
+      {
+        "title": "",
+        "desc": "Licensed electricians, code-compliant work"
+      }
+    ],
+    "related": []
+  },
+  "home-services-solar.html": {
+    "heroTitle": "Solar",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for solar",
+    "introP1": "Get free quotes from vetted local solar installers and learn what incentives you may qualify for.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Free solar savings estimate"
+      },
+      {
+        "title": "",
+        "desc": "Panel, battery & inverter options"
+      },
+      {
+        "title": "",
+        "desc": "Federal & state incentive guidance"
+      },
+      {
+        "title": "",
+        "desc": "Local, licensed installation crews"
+      }
+    ],
+    "related": []
+  },
+  "home-services-garage-doors.html": {
+    "heroTitle": "Garage Doors",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for garage doors",
+    "introP1": "Whether it's a broken spring or a full door replacement, we connect you with local garage door specialists.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Same-week repair availability"
+      },
+      {
+        "title": "",
+        "desc": "Insulated & smart garage doors"
+      },
+      {
+        "title": "",
+        "desc": "Opener installation & repair"
+      },
+      {
+        "title": "",
+        "desc": "Free measure & quote"
+      }
+    ],
+    "related": []
+  },
+  "home-services-foundations.html": {
+    "heroTitle": "Foundations & Waterproofing",
+    "categoryPill": "",
+    "heroDescription": "",
+    "howItWorksHeading": "How it works for foundations & waterproofing",
+    "introP1": "Get matched with local foundation specialists for crack repair, leveling, or basement waterproofing.",
+    "introP2": "Every provider we connect you with is licensed and verified for your state. There's no obligation to move forward, and the service costs you nothing.",
+    "benefits": [
+      {
+        "title": "",
+        "desc": "Foundation crack & settlement repair"
+      },
+      {
+        "title": "",
+        "desc": "Basement & crawl space waterproofing"
+      },
+      {
+        "title": "",
+        "desc": "Sump pump installation"
+      },
+      {
+        "title": "",
+        "desc": "Free structural inspection"
+      }
+    ],
+    "related": []
+  }
+}

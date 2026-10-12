@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | CallAxis - Provider Matching Made Simple</title>
+  <meta name="description" content="Learn how CallAxis connects US consumers with trusted insurance agents and home service contractors across all 50 states.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Apply saved theme before first paint to prevent flash -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('callaxis_theme');
+        if (savedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else if (savedTheme === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="about-page-body">
+
+  <!-- Top Announcement / Contact Ticker Bar -->
+  <div class="top-ticker-bar" role="region" aria-label="Announcement ticker">
+    <div class="ticker-track">
+      <div class="ticker-group">
+        <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🇺🇸 Serving All 50 U.S. States</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🛡️ Licensed &amp; Verified Providers Only</span>
+        <span class="ticker-sep">•</span>
+      </div>
+      <div class="ticker-group" aria-hidden="true">
+        <span class="ticker-item">📞 Call Us Direct: <strong>+1 (555) 010-0123</strong></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">✉️ Email: <strong>arsalanmanunited@gmail.com</strong></span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">⚡ 100% Free, No-Obligation Quotes</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🇺🇸 Serving All 50 U.S. States</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item">🛡️ Licensed &amp; Verified Providers Only</span>
+        <span class="ticker-sep">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clean Corporate Sticky Header -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="CallAxis Homepage">
+        <img src="logo.jpg" alt="CallAxis Logo" class="brand-logo-img">
+        <span class="logo-text">Call<span class="logo-accent">Axis</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-links-wrap">
+        <div class="nav-indicator" id="nav-indicator"></div>
+        <nav class="nav-links" id="nav-menu" aria-label="Main Navigation">
+          
+          <!-- Insurance Dropdown -->
+          <div class="nav-dropdown">
+            <a href="insurance.html" class="dropdown-trigger">
+              Insurance
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu" role="menu">
+              <a href="insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">All Insurance</span></a>
+              <a href="auto-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Auto Insurance</span></a>
+              <a href="health-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Health Insurance</span></a>
+              <a href="home-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Home Insurance</span></a>
+              <a href="life-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Life Insurance</span></a>
+            </div>
+          </div>
+
+          <!-- Home Services Dropdown -->
+          <div class="nav-dropdown">
+            <a href="home-services.html" class="dropdown-trigger">
+              Home Services
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu mega-menu" role="menu">
+              <div class="menu-grid">
+                <div class="menu-col">
+                  <a href="roofing.html" class="dropdown-item" role="menuitem"><span class="item-title">Roofing</span></a>
+                  <a href="flooring.html" class="dropdown-item" role="menuitem"><span class="item-title">Flooring</span></a>
+                  <a href="windows.html" class="dropdown-item" role="menuitem"><span class="item-title">Windows</span></a>
+                  <a href="siding.html" class="dropdown-item" role="menuitem"><span class="item-title">Siding</span></a>
+                  <a href="plumbing.html" class="dropdown-item" role="menuitem"><span class="item-title">Plumbing</span></a>
+                  <a href="solar.html" class="dropdown-item" role="menuitem"><span class="item-title">Solar</span></a>
+                  <a href="foundations.html" class="dropdown-item" role="menuitem"><span class="item-title">Foundations &amp; Waterproofing</span></a>
+                </div>
+                <div class="menu-col">
+                  <a href="bathroom-remodel.html" class="dropdown-item" role="menuitem"><span class="item-title">Bathroom Remodel</span></a>
+                  <a href="hvac.html" class="dropdown-item" role="menuitem"><span class="item-title">HVAC</span></a>
+                  <a href="gutters.html" class="dropdown-item" role="menuitem"><span class="item-title">Gutters</span></a>
+                  <a href="kitchen-remodel.html" class="dropdown-item" role="menuitem"><span class="item-title">Kitchen Remodel</span></a>
+                  <a href="electrical.html" class="dropdown-item" role="menuitem"><span class="item-title">Electrical</span></a>
+                  <a href="garage-doors.html" class="dropdown-item" role="menuitem"><span class="item-title">Garage Doors</span></a>
+                  <a href="medicare-insurance.html" class="dropdown-item" role="menuitem"><span class="item-title">Medicare</span></a>
+                  <a href="home-services.html" class="dropdown-item view-all-item" role="menuitem"><span class="item-title">View All →</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+          </svg>
+        </button>
+        <a href="tel:+15550100123" class="phone-link">
+          <span class="phone-icon">📞</span>
+          <span>+1 (555) 010-0123</span>
+        </a>
+        <a href="index.html#quote" class="btn btn-teal">Get a Free Quote</a>
+        
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Page Header: Dark Navy Hero Section -->
+    <section class="inner-hero dark-surface about-hero-sec">
+      <div class="container">
+        <div class="about-hero-content" data-animate="fade-up">
+          <nav class="about-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="sep">/</span>
+            <span class="current">About</span>
+          </nav>
+          <div class="about-eyebrow-label">About CallAxis</div>
+          <h1 class="about-hero-title">Built to make finding a provider simple again.</h1>
+          <p class="about-hero-desc">We started CallAxis because getting an insurance quote or hiring a contractor shouldn't mean a dozen phone calls and a week of waiting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Quote Block: Teal left border, italic text, attribution -->
+    <section class="about-quote-sec">
+      <div class="container">
+        <div class="about-quote-card" data-animate="fade-up">
+          <blockquote class="about-quote-text">
+            “We believe getting help shouldn't feel like a second job. One request, the right provider, no runaround.”
+          </blockquote>
+          <div class="about-quote-attribution">The CallAxis team</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. "Our story": 2-column layout (Heading + 2 paragraphs left, 4 checkmark card right) -->
+    <section class="about-story-sec">
+      <div class="container">
+        <div class="about-story-grid">
+          <div class="about-story-content" data-animate="fade-up">
+            <h2 class="about-section-heading">Our story</h2>
+            <p class="about-story-p">CallAxis connects everyday consumers with licensed insurance agents and vetted home service contractors across all 50 states. Instead of searching, comparing, and cold-calling providers yourself, you tell us what you need once and we do the matching.</p>
+            <p class="about-story-p">Every provider in our network is independently verified and licensed in their state. We don't sell your information to random third parties, and there's never a cost or obligation to use our service.</p>
+          </div>
+          <div class="about-check-card" data-animate="fade-up">
+            <ul class="about-check-list">
+              <li class="about-check-item">
+                <span class="about-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="about-check-text">Founded to simplify insurance &amp; home service shopping</span>
+              </li>
+              <li class="about-check-item">
+                <span class="about-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="about-check-text">Operates under strict TCPA compliance</span>
+              </li>
+              <li class="about-check-item">
+                <span class="about-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="about-check-text">Licensed, verified providers only</span>
+              </li>
+              <li class="about-check-item">
+                <span class="about-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="about-check-text">Always free for consumers</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. "Our journey": Label + H2 "How we got here", 3 cards (01, 02, 03) -->
+    <section class="about-journey-sec">
+      <div class="container">
+        <div class="about-section-header" data-animate="fade-up">
+          <div class="about-eyebrow">Our journey</div>
+          <h2 class="about-section-heading">How we got here</h2>
+        </div>
+        <div class="about-journey-grid">
+          <div class="about-journey-card" data-animate="fade-up">
+            <div class="about-journey-num">01</div>
+            <h3 class="about-card-title">Founded</h3>
+            <p class="about-card-desc">CallAxis launched with a simple goal: make it easier to find a trustworthy provider without the runaround.</p>
+          </div>
+          <div class="about-journey-card" data-animate="fade-up">
+            <div class="about-journey-num">02</div>
+            <h3 class="about-card-title">Built a nationwide network</h3>
+            <p class="about-card-desc">We onboarded licensed insurance agents and vetted home service contractors across all 50 states.</p>
+          </div>
+          <div class="about-journey-card" data-animate="fade-up">
+            <div class="about-journey-num">03</div>
+            <h3 class="about-card-title">Today</h3>
+            <p class="about-card-desc">Over 250,000 consumers have used CallAxis to get matched quickly, for free, with zero obligation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Stats row: 4 stat blocks with counter animation support -->
+    <section class="section stats-bar-sec about-stats-sec">
+      <div class="container">
+        <div class="about-stats-grid">
+          <div class="about-stat-card" data-animate="fade-up">
+            <div class="about-stat-num">
+              <span class="stat-val" data-count="250000" data-suffix="+">250,000</span><span class="stat-accent">+</span>
+            </div>
+            <div class="about-stat-label">Consumers connected</div>
+          </div>
+          <div class="about-stat-card" data-animate="fade-up">
+            <div class="about-stat-num">
+              <span class="stat-val" data-count="50" data-suffix="">50</span>
+            </div>
+            <div class="about-stat-label">States covered</div>
+          </div>
+          <div class="about-stat-card" data-animate="fade-up">
+            <div class="about-stat-num">
+              <span class="stat-val" data-count="17" data-suffix="+">17</span><span class="stat-accent">+</span>
+            </div>
+            <div class="about-stat-label">Service categories</div>
+          </div>
+          <div class="about-stat-card" data-animate="fade-up">
+            <div class="about-stat-num">
+              <span class="stat-val" data-count="24" data-suffix="/7">24</span><span class="stat-accent">/7</span>
+            </div>
+            <div class="about-stat-label">Support available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. "What we stand for": Label + H2 "The principles behind every match", 3 equal cards -->
+    <section class="about-principles-sec">
+      <div class="container">
+        <div class="about-section-header" data-animate="fade-up">
+          <div class="about-eyebrow">What we stand for</div>
+          <h2 class="about-section-heading">The principles behind every match</h2>
+        </div>
+        <div class="about-principles-grid">
+          <div class="about-principle-card" data-animate="fade-up">
+            <div class="about-principle-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Verified providers</h3>
+            <p class="about-card-desc">Every provider in our network is licensed and verified before they ever get a lead.</p>
+          </div>
+          <div class="about-principle-card" data-animate="fade-up">
+            <div class="about-principle-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="about-card-title">No pressure ever</h3>
+            <p class="about-card-desc">Getting matched doesn't commit you to anything. You're always in control.</p>
+          </div>
+          <div class="about-principle-card" data-animate="fade-up">
+            <div class="about-principle-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Fast by design</h3>
+            <p class="about-card-desc">Most consumers hear from a provider within minutes, not days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA banner "Ready to get connected?" with Call Now + Get a Free Quote buttons -->
+    <section class="about-cta-sec">
+      <div class="container">
+        <div class="cta-banner-card" data-animate="fade-up">
+          <h2 class="cta-headline">Ready to get connected?</h2>
+          <p class="cta-subtitle">Call us now for an instant connection, or fill out the quick form on our homepage. Free, fast, and no obligation.</p>
+          <div class="cta-btn-group">
+            <a href="tel:+15550100123" class="btn btn-teal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              Call Now: +1 (555) 010-0123
+            </a>
+            <a href="index.html#quote" class="btn btn-outline-white">
+              Get a Free Quote &uarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared CallAxis Footer with Dover DE address -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" style="margin-bottom:16px; display:inline-flex; align-items:center; gap:8px; text-decoration:none;">
+          <img src="logo.jpg" alt="CallAxis Logo" style="width:32px;height:32px;border-radius:6px;object-fit:cover;">
+          <span class="logo-text"><span class="footer-brand-call">Call</span><span class="footer-brand-axis">Axis</span></span>
+        </a>
+        <p class="footer-desc">Connecting US consumers with trusted insurance agents and home service contractors — free, fast, and no obligation.</p>
+        
+        <div class="footer-contact">
+          <div class="footer-contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+15550100123" class="footer-link" style="color:inherit;text-decoration:none;">+1 (555) 010-0123</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>1234 Business Park Drive, Suite 100, Dover, DE 19901</span>
+          </div>
+          <div class="footer-contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:arsalanmanunited@gmail.com" class="footer-link" style="color:inherit;text-decoration:none;">arsalanmanunited@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">INSURANCE</h4>
+        <ul class="footer-list">
+          <li><a href="auto-insurance.html" class="footer-link">Auto Insurance</a></li>
+          <li><a href="health-insurance.html" class="footer-link">Health Insurance</a></li>
+          <li><a href="home-insurance.html" class="footer-link">Home Insurance</a></li>
+          <li><a href="life-insurance.html" class="footer-link">Life Insurance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">HOME SERVICES</h4>
+        <ul class="footer-list">
+          <li><a href="roofing.html" class="footer-link">Roofing</a></li>
+          <li><a href="bathroom-remodel.html" class="footer-link">Bathroom Remodel</a></li>
+          <li><a href="flooring.html" class="footer-link">Flooring</a></li>
+          <li><a href="hvac.html" class="footer-link">HVAC</a></li>
+          <li><a href="solar.html" class="footer-link">Solar</a></li>
+          <li><a href="medicare-insurance.html" class="footer-link">Medicare</a></li>
+          <li><a href="home-services.html" class="footer-link">View all &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">COMPANY</h4>
+        <ul class="footer-list">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+          <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 CallAxis. All rights reserved.</span>
+      <span><a href="privacy-policy.html" class="footer-link">Privacy Policy</a> · <a href="terms.html" class="footer-link">Terms of Service</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
