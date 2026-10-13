@@ -548,7 +548,8 @@ document.addEventListener('DOMContentLoaded', () => {
       { id: 'electrical', label: 'Electrical' },
       { id: 'solar', label: 'Solar' },
       { id: 'garage', label: 'Garage Doors' },
-      { id: 'foundation', label: 'Foundations & Waterproofing' }
+      { id: 'foundation', label: 'Foundations & Waterproofing' },
+      { id: 'water_damage', label: 'Water Damage' }
     ]
   };
 

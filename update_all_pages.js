@@ -51,7 +51,7 @@ const subpagesData = [
       { title: "Bathroom Remodel", url: "bathroom-remodel.html" },
       { title: "Flooring", url: "flooring.html" },
       { title: "HVAC", url: "hvac.html" },
-      { title: "Windows", url: "windows.html" }
+      { title: "Water Damage", url: "water-damage.html" }
     ]
   },
   {
@@ -76,7 +76,7 @@ const subpagesData = [
       { title: "Kitchen Remodel", url: "kitchen-remodel.html" },
       { title: "Plumbing", url: "plumbing.html" },
       { title: "Flooring", url: "flooring.html" },
-      { title: "Electrical", url: "electrical.html" }
+      { title: "Water Damage", url: "water-damage.html" }
     ]
   },
   {
@@ -99,9 +99,9 @@ const subpagesData = [
     related_heading: "Other home services you might need",
     related: [
       { title: "Bathroom Remodel", url: "bathroom-remodel.html" },
-      { title: "Kitchen Remodel", url: "kitchen-remodel.html" },
       { title: "Foundations", url: "foundations.html" },
-      { title: "Roofing", url: "roofing.html" }
+      { title: "Roofing", url: "roofing.html" },
+      { title: "Water Damage", url: "water-damage.html" }
     ]
   },
   {
@@ -249,9 +249,9 @@ const subpagesData = [
     related_heading: "Other home services you might need",
     related: [
       { title: "Bathroom Remodel", url: "bathroom-remodel.html" },
-      { title: "Kitchen Remodel", url: "kitchen-remodel.html" },
       { title: "Foundations", url: "foundations.html" },
-      { title: "HVAC", url: "hvac.html" }
+      { title: "HVAC", url: "hvac.html" },
+      { title: "Water Damage", url: "water-damage.html" }
     ]
   },
   {
@@ -350,12 +350,37 @@ const subpagesData = [
     related: [
       { title: "Gutters", url: "gutters.html" },
       { title: "Plumbing", url: "plumbing.html" },
-      { title: "Siding", url: "siding.html" },
-      { title: "Flooring", url: "flooring.html" }
+      { title: "Flooring", url: "flooring.html" },
+      { title: "Water Damage", url: "water-damage.html" }
+    ]
+  },
+  {
+    filename: "water-damage.html",
+    service: "Water Damage",
+    service_full: "Water Damage",
+    category: "Home Services",
+    cat_slug: "home-services",
+    tagline: "Help with flooding, leaks and burst pipes, handled by verified local restoration pros.",
+    meta_desc: "Connect with verified local water damage restoration pros for emergency water extraction, drying, and mold prevention. Free quotes, zero obligation.",
+    main_title: "How it works for water damage",
+    para1: "Connect with licensed, verified local restoration companies specializing in flood recovery, leak mitigation, and structural drying.",
+    para2: "Get prompt professional assessments to prevent further property damage with zero obligation, and our service costs you nothing.",
+    benefits: [
+      "24/7 emergency response options",
+      "Water extraction and drying",
+      "Mold prevention and cleanup",
+      "Help documenting damage for insurance claims"
+    ],
+    related_heading: "Other home services you might need",
+    related: [
+      { title: "Plumbing", url: "plumbing.html" },
+      { title: "Flooring", url: "flooring.html" },
+      { title: "Roofing", url: "roofing.html" },
+      { title: "Foundations & Waterproofing", url: "foundations.html" }
     ]
   },
 
-  // --- 4 INSURANCE SUBPAGES ---
+  // --- 5 INSURANCE SUBPAGES ---
   {
     filename: "auto-insurance.html",
     service: "Auto Insurance",
@@ -759,6 +784,7 @@ function generateSubpageHTML(data) {
                 <a href="solar.html" class="dropdown-item" role="menuitem"><span class="item-title">Solar</span></a>
                 <a href="garage-doors.html" class="dropdown-item" role="menuitem"><span class="item-title">Garage Doors</span></a>
                 <a href="foundations.html" class="dropdown-item" role="menuitem"><span class="item-title">Foundations &amp; Waterproofing</span></a>
+                <a href="water-damage.html" class="dropdown-item" role="menuitem"><span class="item-title">Water Damage</span></a>
                 <a href="home-services.html" class="dropdown-item view-all-item" role="menuitem"><span class="item-title">View All &rarr;</span></a>
               </div>
             </div>
@@ -1037,6 +1063,7 @@ function generateHomeServicesOverviewHTML() {
                 <a href="solar.html" class="dropdown-item" role="menuitem"><span class="item-title">Solar</span></a>
                 <a href="garage-doors.html" class="dropdown-item" role="menuitem"><span class="item-title">Garage Doors</span></a>
                 <a href="foundations.html" class="dropdown-item" role="menuitem"><span class="item-title">Foundations &amp; Waterproofing</span></a>
+                <a href="water-damage.html" class="dropdown-item" role="menuitem"><span class="item-title">Water Damage</span></a>
                 <a href="home-services.html" class="dropdown-item view-all-item" role="menuitem"><span class="item-title">View All &rarr;</span></a>
               </div>
             </div>
@@ -1112,6 +1139,7 @@ function generateHomeServicesOverviewHTML() {
               <option value="Solar">Solar</option>
               <option value="Garage Doors">Garage Doors</option>
               <option value="Foundations & Waterproofing">Foundations & Waterproofing</option>
+              <option value="Water Damage">Water Damage</option>
             </select>
           </label>
           <label class="field">
@@ -1170,7 +1198,7 @@ function generateHomeServicesOverviewHTML() {
         <p style="color:var(--text-muted); font-size:15px; margin-top:8px;">Compare verified local contractors for any home repair or renovation project.</p>
       </div>
 
-      <div class="hub-grid">
+      <div class="hub-grid hub-grid-14">
         <a href="roofing.html" class="hub-card card-hover hue-teal" tabindex="0">
           <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10.5V19a1 1 0 001 1h12a1 1 0 001-1v-8.5"/></svg></div>
           <h3>Roofing</h3>
@@ -1259,6 +1287,13 @@ function generateHomeServicesOverviewHTML() {
           <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg></div>
           <h3>Foundations & Waterproofing</h3>
           <p>Crack repair, piers, sump pumps & encapsulation.</p>
+          <span class="go-link">Get a quote &rarr;</span>
+        </a>
+
+        <a href="water-damage.html" class="hub-card card-hover hue-blue" tabindex="0">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+          <h3>Water Damage</h3>
+          <p>Emergency extraction, drying &amp; mold cleanup.</p>
           <span class="go-link">Get a quote &rarr;</span>
         </a>
 
@@ -1383,6 +1418,7 @@ function generateInsuranceOverviewHTML() {
                 <a href="solar.html" class="dropdown-item" role="menuitem"><span class="item-title">Solar</span></a>
                 <a href="garage-doors.html" class="dropdown-item" role="menuitem"><span class="item-title">Garage Doors</span></a>
                 <a href="foundations.html" class="dropdown-item" role="menuitem"><span class="item-title">Foundations &amp; Waterproofing</span></a>
+                <a href="water-damage.html" class="dropdown-item" role="menuitem"><span class="item-title">Water Damage</span></a>
                 <a href="home-services.html" class="dropdown-item view-all-item" role="menuitem"><span class="item-title">View All &rarr;</span></a>
               </div>
             </div>
@@ -1563,7 +1599,7 @@ if (onlyRoofing) {
   fs.writeFileSync('roofing.html', generateSubpageHTML(roofingData));
   console.log("Successfully generated roofing.html ONLY (Step 2 Mode)");
 } else {
-  // Generate all 17 subpages
+  // Generate all 19 subpages (14 Home Services + 5 Insurance)
   subpagesData.forEach(sub => {
     fs.writeFileSync(sub.filename, generateSubpageHTML(sub));
     console.log(`Generated subpage: ${sub.filename}`);
@@ -1576,5 +1612,5 @@ if (onlyRoofing) {
   fs.writeFileSync('insurance.html', generateInsuranceOverviewHTML());
   console.log("Generated overview: insurance.html");
 
-  console.log("ALL 19 PAGES GENERATED SUCCESSFULLY!");
+  console.log("ALL 21 PAGES GENERATED SUCCESSFULLY!");
 }

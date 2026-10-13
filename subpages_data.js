@@ -23,7 +23,7 @@ const subpagesData = {
     related: [
       { name: "Gutters", url: "gutters.html", desc: "Seamless gutter installation, leaf guards & downspout repairs." },
       { name: "Siding", url: "siding.html", desc: "Vinyl, fiber cement & insulated siding replacement." },
-      { name: "Windows", url: "windows.html", desc: "Double-pane replacement windows & energy-efficient installs." },
+      { name: "Water Damage", url: "water-damage.html", desc: "Emergency water extraction, roof leak drying & mold prevention." },
       { name: "Foundations", url: "foundations.html", desc: "Foundation crack repair, waterproofing & sump pump install." }
     ],
     formOptions: ["Roof Repair", "Complete Roof Replacement", "Storm / Hail Damage", "Roof Inspection / Leak Search"]
@@ -48,7 +48,7 @@ const subpagesData = {
       { name: "Kitchen Remodel", url: "kitchen-remodel.html", desc: "Cabinet refacing, countertop installation & kitchen redesign." },
       { name: "Plumbing", url: "plumbing.html", desc: "Fixture replacements, drain cleaning & emergency repairs." },
       { name: "Flooring", url: "flooring.html", desc: "Tile, waterproof vinyl & hardwood installation." },
-      { name: "Electrical", url: "electrical.html", desc: "Vanity lighting, ventilation fans & GFC outlet wiring." }
+      { name: "Water Damage", url: "water-damage.html", desc: "Emergency leak mitigation, structural drying & cleanup." }
     ],
     formOptions: ["Shower Conversion", "Full Bathroom Remodel", "Vanity & Tile Upgrade", "Accessibility / Walk-in Tub"]
   },
@@ -70,7 +70,7 @@ const subpagesData = {
     relatedTitle: "Related Home Services",
     related: [
       { name: "Bathroom Remodel", url: "bathroom-remodel.html", desc: "Custom tile showers & waterproof bathroom flooring." },
-      { name: "Kitchen Remodel", url: "kitchen-remodel.html", desc: "Kitchen tile & hardwood flooring upgrades." },
+      { name: "Water Damage", url: "water-damage.html", desc: "Water extraction, subfloor drying & damaged floor restoration." },
       { name: "Foundations", url: "foundations.html", desc: "Subfloor repair & basement floor waterproofing." },
       { name: "Roofing", url: "roofing.html", desc: "Exterior home protection & roof repair services." }
     ],
@@ -216,7 +216,7 @@ const subpagesData = {
       { name: "Bathroom Remodel", url: "bathroom-remodel.html", desc: "Shower conversions & bathroom plumbing upgrades." },
       { name: "HVAC", url: "hvac.html", desc: "Boiler, heat pump & gas piping specialists." },
       { name: "Foundations", url: "foundations.html", desc: "Sump pump install & basement flood prevention." },
-      { name: "Electrical", url: "electrical.html", desc: "Water heater wiring & garbage disposal hookups." }
+      { name: "Water Damage", url: "water-damage.html", desc: "Burst pipe cleanup, water removal & mold prevention." }
     ],
     formOptions: ["Water Heater Repair / Replace", "Drain Cleaning / Clog", "Leak Repair / Piping", "Bathroom / Kitchen Plumbing"]
   },
@@ -312,9 +312,33 @@ const subpagesData = {
       { name: "Gutters", url: "gutters.html", desc: "Gutter guard & downspout extensions to protect foundation." },
       { name: "Plumbing", url: "plumbing.html", desc: "Sewer line leak repair & main line inspections." },
       { name: "Flooring", url: "flooring.html", desc: "Basement subfloor leveling & waterproof flooring." },
-      { name: "Roofing", url: "roofing.html", desc: "Roof drainage & exterior weatherproofing." }
+      { name: "Water Damage", url: "water-damage.html", desc: "Basement flood recovery, water extraction & structural drying." }
     ],
     formOptions: ["Foundation Crack Repair", "Basement Waterproofing", "Sump Pump Install / Repair", "Bowing Wall Stabilization"]
+  },
+  "water-damage.html": {
+    type: "home-services",
+    title: "Water Damage | GetCallAxis",
+    heroTitle: "Water Damage",
+    categoryPill: "HOME SERVICES",
+    heroSub: "Help with flooding, leaks and burst pipes, handled by verified local restoration pros.",
+    howItWorksTitle: "How it works for water damage",
+    introP1: "Connect with licensed, verified local restoration companies specializing in flood recovery, leak mitigation, and structural drying.",
+    introP2: "Get prompt professional assessments to prevent further property damage with zero obligation, and our service costs you nothing.",
+    benefits: [
+      { title: "24/7 emergency response options", desc: "Rapid connection with local restoration specialists ready for immediate emergency service." },
+      { title: "Water extraction and drying", desc: "Industrial-grade pumping, moisture detection, and structural dehumidification." },
+      { title: "Mold prevention and cleanup", desc: "Antimicrobial treatments and thorough moisture removal to stop mold growth." },
+      { title: "Help documenting damage for insurance claims", desc: "Assistance with thorough damage logs, itemized estimates, and photos for claims." }
+    ],
+    relatedTitle: "Other home services you might need",
+    related: [
+      { name: "Plumbing", url: "plumbing.html", desc: "Pipe repair, leak detection & water shutoff service." },
+      { name: "Flooring", url: "flooring.html", desc: "Water-damaged floor replacement & tile repairs." },
+      { name: "Roofing", url: "roofing.html", desc: "Roof leak repairs & storm damage restoration." },
+      { name: "Foundations & Waterproofing", url: "foundations.html", desc: "Basement waterproofing, sump pumps & structural drying." }
+    ],
+    formOptions: ["Emergency Water Extraction", "Burst Pipe Cleanup", "Flood Damage Mitigation", "Mold Remediation & Drying"]
   },
   "auto-insurance.html": {
     type: "insurance",

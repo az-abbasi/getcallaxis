@@ -2425,6 +2425,22 @@ select.form-select option {
   }
 }
 
+/* Balanced 14-card layout for Home Services Overview */
+@media (min-width: 901px) {
+  .hub-grid.hub-grid-14 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .hub-grid.hub-grid-14 .hub-card {
+    grid-column: span 2;
+  }
+  .hub-grid.hub-grid-14 .hub-card:nth-child(13) {
+    grid-column: 2 / span 2;
+  }
+  .hub-grid.hub-grid-14 .hub-card:nth-child(14) {
+    grid-column: 4 / span 2;
+  }
+}
+
 .hub-card {
   background: var(--bg-surface, #FFFFFF);
   border: 1px solid var(--border-color, #E2E8F0);
